@@ -4,7 +4,19 @@
 
 **Company Name:** _______________
 
-**Business Type:** (e.g., Pool Service, HVAC, Roofing, Landscaping)
+**Industry Template:** (Select ONE - determines stock images and service mappings)
+- [ ] hvac - HVAC / Heating & Cooling
+- [ ] pool-service - Pool Service & Maintenance
+- [ ] roofing - Roofing
+- [ ] plumbing - Plumbing
+- [ ] electrical - Electrical
+- [ ] landscaping - Landscaping
+- [ ] painting - Painting
+- [ ] pest-control - Pest Control
+- [ ] cleaning - Cleaning Services
+- [ ] fencing - Fencing
+
+**Business Type Description:** (How you describe your business, e.g., "HVAC Company", "Pool Service")
 _______________
 
 **Tagline/Slogan:** (if they have one - company motto/catchphrase)

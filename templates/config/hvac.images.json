@@ -1,0 +1,90 @@
+{
+  "industry": "hvac",
+  "displayName": "HVAC / Heating & Cooling",
+  "lastUpdated": null,
+  "images": {
+    "heroHome": {
+      "path": "templates/images/hvac/hero-home.jpg",
+      "freepikId": "173922557",
+      "alt": "Modern home exterior with air conditioning unit",
+      "usedOn": ["homepage"]
+    },
+    "heroProjects": {
+      "path": "templates/images/hvac/hero-projects.jpg",
+      "freepikId": "269298451",
+      "alt": "Heat pump installation in residential garden",
+      "usedOn": ["projects page"]
+    },
+    "aboutUs": {
+      "path": "templates/images/hvac/about-us.jpg",
+      "freepikId": "1910788",
+      "alt": "Friendly HVAC technicians by service van",
+      "usedOn": ["homepage about section"],
+      "clientProvided": true,
+      "note": "Use stock fallback only if client has no team photo"
+    },
+    "reviewsBg": {
+      "path": "templates/images/hvac/reviews-bg.jpg",
+      "freepikId": "276002347",
+      "alt": "HVAC technician working on rooftop unit at sunset",
+      "usedOn": ["homepage", "services pages", "projects page", "service areas", "contact"]
+    },
+    "ctaBg": {
+      "path": "templates/images/hvac/cta-bg.jpg",
+      "freepikId": "68611544",
+      "alt": "Residential home exterior with air conditioning condenser units",
+      "usedOn": ["homepage", "services pages", "projects page", "service areas"]
+    }
+  },
+  "services": {
+    "ac-repair": {
+      "path": "templates/images/hvac/services/ac-repair.jpg",
+      "freepikId": "380845558",
+      "alt": "Technician repairing air conditioning unit"
+    },
+    "heating-repair": {
+      "path": "templates/images/hvac/services/heating-repair.jpg",
+      "freepikId": "106814804",
+      "alt": "Technician repairing furnace heating system"
+    },
+    "ac-installation": {
+      "path": "templates/images/hvac/services/ac-installation.jpg",
+      "freepikId": "340466692",
+      "alt": "Technician installing ceiling air conditioning unit"
+    },
+    "heating-installation": {
+      "path": "templates/images/hvac/services/heating-installation.jpg",
+      "freepikId": "103221625",
+      "alt": "New furnace and water heater installation in basement"
+    },
+    "hvac-maintenance": {
+      "path": "templates/images/hvac/services/hvac-maintenance.jpg",
+      "freepikId": "65631458",
+      "alt": "Technician checking HVAC system with gauges"
+    },
+    "duct-cleaning": {
+      "path": "templates/images/hvac/services/duct-cleaning.jpg",
+      "freepikId": "37665554",
+      "alt": "Technician cleaning air duct filter"
+    },
+    "indoor-air-quality": {
+      "path": "templates/images/hvac/services/indoor-air-quality.jpg",
+      "freepikId": "178291882",
+      "alt": "Air purifier in modern living room"
+    },
+    "emergency-hvac": {
+      "path": "templates/images/hvac/services/emergency-hvac.jpg",
+      "freepikId": "54655899",
+      "alt": "HVAC technician on emergency service call"
+    }
+  },
+  "blog": {
+    "note": "Blog images assigned per-post during content creation using freepik-image-curator skill",
+    "suggestedSearchTerms": {
+      "maintenance": ["air filter replacement", "HVAC maintenance", "thermostat adjustment"],
+      "energy": ["smart thermostat", "energy efficient home", "utility bills"],
+      "seasonal": ["summer cooling tips", "winter heating home", "AC preparation"],
+      "comfort": ["comfortable home family", "cozy living room", "home temperature"]
+    }
+  }
+}

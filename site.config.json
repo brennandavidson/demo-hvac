@@ -409,6 +409,11 @@
       }
     ]
   },
+  "blog": {
+    "sectionBadge": "RESOURCES & INSIGHTS",
+    "sectionHeading": "OUR BLOG",
+    "sectionDescription": "Expert advice, tips, and guides to help you make informed decisions about your home improvement projects."
+  },
   "cta": {
     "heading": "READY TO TAKE THE NEXT STEP?",
     "subheading": "GET A FREE QUOTE TODAY!",

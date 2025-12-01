@@ -6,14 +6,21 @@ import { BlogCard } from '@/components/admin/blog/BlogCard';
 import { BlogPost, BlogCategory } from '@/lib/blog/blog-types';
 import { getBadgeColors } from '@/lib/colors';
 
+interface BlogConfig {
+  sectionBadge: string;
+  sectionHeading: string;
+  sectionDescription: string;
+}
+
 interface BlogPageClientProps {
   allPosts: BlogPost[];
   categories: BlogCategory[];
+  blogConfig?: BlogConfig;
 }
 
 const POSTS_PER_PAGE = 9;
 
-export default function BlogPageClient({ allPosts, categories }: BlogPageClientProps) {
+export default function BlogPageClient({ allPosts, categories, blogConfig }: BlogPageClientProps) {
   const badgeColors = getBadgeColors();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
@@ -55,14 +62,14 @@ export default function BlogPageClient({ allPosts, categories }: BlogPageClientP
             className="inline-block px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider"
             style={{ backgroundColor: badgeColors.background, color: badgeColors.text }}
           >
-            RESOURCES & INSIGHTS
+            {blogConfig?.sectionBadge || 'RESOURCES & INSIGHTS'}
           </span>
         </div>
         <h1 className="font-heading text-4xl sm:text-5xl font-bold text-background-blue mb-4">
-          POOL CARE BLOG
+          {blogConfig?.sectionHeading || 'OUR BLOG'}
         </h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Expert advice, maintenance tips, and guides to help you keep your Arizona pool in perfect condition year-round
+          {blogConfig?.sectionDescription || 'Expert advice, tips, and guides to help you make informed decisions.'}
         </p>
       </div>
 

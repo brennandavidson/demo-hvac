@@ -1,0 +1,54 @@
+{
+  "_comment": "Template for creating new industry image configs",
+  "industry": "[slug]",
+  "displayName": "[Display Name]",
+  "lastUpdated": null,
+  "images": {
+    "heroHome": {
+      "path": null,
+      "freepikId": null,
+      "alt": "[Industry] professional",
+      "usedOn": ["homepage"]
+    },
+    "heroProjects": {
+      "path": null,
+      "freepikId": null,
+      "alt": "[Industry] project showcase",
+      "usedOn": ["projects page"]
+    },
+    "aboutUs": {
+      "path": null,
+      "freepikId": null,
+      "alt": "[Industry] team or professional",
+      "usedOn": ["homepage about section"],
+      "clientProvided": true,
+      "note": "Stock fallback - client image from client-intake/images/about-us.jpg takes priority"
+    },
+    "reviewsBg": {
+      "path": null,
+      "freepikId": null,
+      "alt": "[Industry] background",
+      "usedOn": ["homepage", "services pages", "projects page", "service areas", "contact"]
+    },
+    "ctaBg": {
+      "path": null,
+      "freepikId": null,
+      "alt": "[Industry] background",
+      "usedOn": ["homepage", "services pages", "projects page", "service areas"]
+    }
+  },
+  "services": {
+    "[service-slug]": {
+      "path": null,
+      "freepikId": null,
+      "alt": "[Service name]",
+      "searchTerms": ["search term 1", "search term 2"]
+    }
+  },
+  "blog": {
+    "[category]": {
+      "images": [],
+      "searchTerms": ["search term 1", "search term 2"]
+    }
+  }
+}

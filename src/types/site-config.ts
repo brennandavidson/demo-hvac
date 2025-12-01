@@ -13,6 +13,7 @@ export interface SiteConfig {
   aboutUs: AboutUsSection;
   process: ProcessSection;
   faq: FAQSection;
+  blog?: BlogSection;
   cta: CTASection;
   footer: FooterSection;
   branding: BrandingConfig;
@@ -154,6 +155,12 @@ export interface FAQSection {
 export interface FAQItem {
   question: string;
   answer: string;
+}
+
+export interface BlogSection {
+  sectionBadge: string;
+  sectionHeading: string;
+  sectionDescription: string;
 }
 
 export interface CTASection {

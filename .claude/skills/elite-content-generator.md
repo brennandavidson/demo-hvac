@@ -6,6 +6,15 @@ Content types: service pages, service area pages, blog posts, FAQ.
 
 Goals: Rank well, sound authentic, provide value, build trust.
 
+## CRITICAL: Content Formatting
+
+**NEVER write walls of text.** Every section MUST include:
+- `<h3>` subheadings to break up content
+- `<ul>` or `<ol>` lists every 2-3 paragraphs
+- Short paragraphs (2-4 sentences max)
+
+If a section has more than 3 consecutive `<p>` tags without a list or heading, it is WRONG.
+
 ## Process
 
 ### 1. Research (Required)
@@ -106,18 +115,25 @@ Blog posts:
 - Can be slightly more conversational
 - Use "I've seen" or "In my experience" sparingly
 - Share industry knowledge and insider tips
+- **Images**: Use `freepik-image-curator` skill to find and assign a featured image for each post. Check `templates/config/[industry].images.json` for suggested search terms by category.
 
-## HTML Formatting
+## HTML Formatting (MANDATORY)
 
-All content must be valid HTML.
+All content must be valid HTML with proper formatting for readability.
 
-Start with `<p>` paragraphs. Use `<h3>` for sub-topics. Use `<ul>` or `<ol>` for lists.
+### Required Structure Per Section
 
-Example:
+Each section's `content` field MUST follow this pattern:
+1. Opening paragraph (2-3 sentences)
+2. `<h3>` subheading
+3. `<ul>` or `<ol>` list (4-6 items)
+4. Paragraph explaining the list
+5. Another `<h3>` if section is long
+6. More content as needed
+
+### Correct Example:
 ```html
-<p>Air conditioning repair addresses issues that prevent your AC system from cooling effectively. These problems can range from simple thermostat malfunctions to complex compressor failures.</p>
-
-<p>Professional AC repair involves diagnosing the root cause and implementing lasting solutions. This ensures your system runs efficiently and prevents costly future breakdowns.</p>
+<p>Air conditioning repair addresses issues that prevent your AC system from cooling effectively. These problems range from simple thermostat malfunctions to complex compressor failures.</p>
 
 <h3>Common AC Problems</h3>
 <ul>
@@ -127,18 +143,39 @@ Example:
   <li>Clogged drain lines leading to water damage</li>
 </ul>
 
-<p>Each of these issues requires specific repair techniques and replacement parts. A trained technician can quickly identify the problem and recommend the best solution.</p>
+<p>Each issue requires specific repair techniques. A trained technician can quickly identify the problem and recommend the best solution.</p>
+
+<h3>When to Call a Professional</h3>
+<p>Some signs indicate you need immediate help:</p>
+<ul>
+  <li>AC blowing warm air despite being set to cool</li>
+  <li>Unusual noises like grinding or squealing</li>
+  <li>Water pooling around your indoor unit</li>
+  <li>Electric bills suddenly spiking</li>
+</ul>
+
+<p>Addressing these issues quickly prevents more expensive repairs down the road.</p>
 ```
 
-Rules:
-- Never use `<h2>` in content (the `heading` field becomes H2 automatically)
-- Use `<h3>` only for sub-topics within sections
-- Wrap all paragraphs in `<p>` tags (2-4 sentences each)
-- Use `<ul>` for unordered lists, `<ol>` for ordered lists
-- Alternate between paragraphs, lists, and headings
-- Break up text with lists every 2-3 paragraphs
+### WRONG Example (wall of text):
+```html
+<p>Air conditioning repair is essential for maintaining comfort in your home. When your AC breaks down, it can be frustrating and uncomfortable, especially during hot summer months. Professional technicians have the training and tools needed to diagnose problems quickly.</p>
 
-Word counts:
+<p>There are many reasons why an AC might stop working properly. Refrigerant leaks are common and cause the system to blow warm air. Frozen coils happen when airflow is restricted. Electrical issues can prevent the system from turning on at all. Thermostat problems might cause incorrect temperature readings.</p>
+
+<p>When you call for repair service, the technician will first inspect your system to find the root cause. They'll check refrigerant levels, inspect electrical connections, and test all components. Once they identify the problem, they'll explain your options and provide a quote for repairs.</p>
+```
+
+This is WRONG because it has 3 consecutive paragraphs with no lists or subheadings.
+
+### Rules
+- Never use `<h2>` (the `heading` field becomes H2 automatically)
+- Use `<h3>` for sub-topics within sections (1-2 per section)
+- Maximum 2-3 consecutive `<p>` tags before a list or heading
+- Lists should have 4-6 items
+- Paragraphs: 2-4 sentences max
+
+### Word Counts
 - Service pages: 600-1000 words (3-4 sections, 200-400 words each)
 - Service area pages: 600-1000 words (3 sections, 200-400 words each)
 - Blog posts: 1000-1500 words (more sections, deeper coverage)

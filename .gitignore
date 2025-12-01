@@ -160,3 +160,9 @@ settings.json
 # Client intake folders (used during setup, not part of template)
 client-intake/
 client-intake-archive/
+
+# Freepik image review folder (temporary thumbnails for curation)
+.image-review/
+
+# Downloaded images (before moving to templates/)
+downloads/
