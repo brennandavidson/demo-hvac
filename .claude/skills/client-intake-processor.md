@@ -197,11 +197,35 @@ Create `.config.json` in each category folder:
 
 ### Blog Post Requirements
 
-**Images (REQUIRED):**
-- Every blog post MUST have an `image` field with a real Unsplash URL
-- Search Unsplash for relevant images: https://unsplash.com/s/photos/[topic]
-- Use format: `https://images.unsplash.com/photo-XXXXX?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80`
-- Include descriptive `imageAlt` text
+**Images (REQUIRED - Use Freepik API):**
+
+For EACH blog post, use the `freepik-image-curator` skill to find a relevant image:
+
+1. Search Freepik for the blog topic:
+```bash
+FREEPIK_API_KEY=[key] node scripts/freepik/search.js "[blog topic] [industry]" .image-review/blog/[post-slug] --limit 10
+```
+
+2. Review thumbnails and select the best match (watch for AI artifacts)
+
+3. Download and compress:
+```bash
+FREEPIK_API_KEY=[key] node scripts/freepik/download.js [resource-id]
+cp downloads/[resource-id].jpg public/images/blog/[post-slug].jpg
+node scripts/freepik/compress.js public/images/blog/[post-slug].jpg
+```
+
+4. Set in blog post JSON:
+```json
+{
+  "image": "/images/blog/[post-slug].jpg",
+  "imageAlt": "[Descriptive alt text]"
+}
+```
+
+**Fallback:** If Freepik has no relevant results for the topic, use a template industry image from `templates/images/[industry]/services/` that best matches the topic.
+
+**Each blog post MUST have a unique image.** Do not reuse images across posts.
 
 **Content formatting:**
 - Do NOT wrap content in `<article>` tags (BlogLayout handles styling)
@@ -409,6 +433,25 @@ Create slug from service name (lowercase, hyphens): "HVAC Repair" → "hvac-repa
 ```
 
 ### Service Areas Section
+
+**IMPORTANT: Each city MUST have a unique hero image.** Use Freepik API:
+
+For EACH city in the service areas:
+
+1. Search Freepik for the city:
+```bash
+FREEPIK_API_KEY=[key] node scripts/freepik/search.js "[City Name] [State] skyline cityscape" .image-review/cities/[city-slug] --limit 10
+```
+
+2. If city-specific image found (skyline, landmarks, downtown):
+   - Download, compress, save to `public/images/cities/[city-slug].jpg`
+   - Use path `/images/cities/[city-slug].jpg`
+
+3. If NO city-specific image found:
+   - Search for "[industry] service residential home" to get industry-relevant images
+   - Each city should still get a DIFFERENT image from the pool
+   - Rotate through template service images: `templates/images/[industry]/services/*.jpg`
+
 ```json
 {
   "serviceAreas": {
@@ -423,7 +466,7 @@ Create slug from service name (lowercase, hyphens): "HVAC Repair" → "hvac-repa
         "hero": {
           "title": "[CITY] [PRIMARY SERVICE TYPE]",
           "subtitle": "[PRIMARY SERVICE TYPE] IN [CITY]",
-          "backgroundImage": "[Unsplash URL]"
+          "backgroundImage": "/images/cities/[city-slug].jpg"
         },
         "sections": [
           { "heading": "[Generated]", "content": "[HTML from Step 4]" }
@@ -433,6 +476,8 @@ Create slug from service name (lowercase, hyphens): "HVAC Repair" → "hvac-repa
   }
 }
 ```
+
+**Do NOT use the same image for all cities.** Each city page must have a visually distinct hero.
 
 ### CRITICAL: Content Field HTML Formatting
 
