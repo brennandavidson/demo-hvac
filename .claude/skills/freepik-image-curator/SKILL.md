@@ -1,3 +1,8 @@
+---
+name: freepik-image-curator
+description: Select and curate high-quality stock images from Freepik API for website templates and industry-specific content
+---
+
 # Freepik Image Curator
 
 Select high-quality stock images from Freepik for website templates.

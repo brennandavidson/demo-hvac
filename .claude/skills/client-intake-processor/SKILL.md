@@ -1,3 +1,8 @@
+---
+name: client-intake-processor
+description: Generate a complete website from client intake form - populates site.config.json, writes blog posts, copies assets, and processes images via Freepik API
+---
+
 # Client Intake Processor
 
 Generate a complete website from client intake form.

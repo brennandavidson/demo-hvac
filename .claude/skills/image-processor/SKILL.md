@@ -1,3 +1,8 @@
+---
+name: image-processor
+description: Process website images using Freepik API - handles blog images, service area city images, and project gallery photos
+---
+
 # Image Processor
 
 Process all website images using Freepik API. This skill handles blog images, service area images, and project gallery images.

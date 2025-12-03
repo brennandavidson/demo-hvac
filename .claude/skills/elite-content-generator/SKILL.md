@@ -1,3 +1,8 @@
+---
+name: elite-content-generator
+description: Create high-ranking SEO content for home service businesses - service pages, city pages, blog posts with proper HTML formatting
+---
+
 # Elite Content Generator
 
 Create high-ranking, natural content for home service businesses.
