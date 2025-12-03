@@ -11,6 +11,7 @@ import {
   getSiteConfigServices,
   getSiteConfigServiceAreas,
   getSiteConfigBranding,
+  getSiteConfigProjects,
 } from '@/lib/get-site-config';
 import { getNavColors } from '@/lib/colors';
 import { getLogoMaxWidth, getDefaultLogoMaxHeight } from '@/lib/logo-utils';
@@ -44,6 +45,16 @@ export function Header({
   const services = getSiteConfigServices();
   const serviceAreas = getSiteConfigServiceAreas();
   const branding = getSiteConfigBranding();
+  const projectsConfig = getSiteConfigProjects();
+
+  // Check if projects exist to conditionally show/hide projects link
+  const hasProjects = projectsConfig?.gallery && projectsConfig.gallery.length > 0;
+
+  // Filter out projects link if no projects exist
+  const filteredNavLinks = useMemo(() =>
+    navLinks.filter(link => link.href !== '/projects' || hasProjects),
+    [navLinks, hasProjects]
+  );
 
   // Use config values with fallback to props
   const phone = phoneNumber || contact.phone;
@@ -148,7 +159,7 @@ export function Header({
 
           {/* Desktop Navigation - Center */}
           <div className="hidden nav:flex items-center space-x-8">
-            {navLinks.map((link) => {
+            {filteredNavLinks.map((link) => {
               // Special handling for Services link with dropdown
               if (link.href === '/services') {
                 return (
@@ -320,7 +331,7 @@ export function Header({
           }`}
         >
           <div className={`py-4 space-y-4 transition-all duration-300 ${isMenuOpen ? 'border-t border-primary' : ''}`}>
-            {navLinks.map((link) => {
+            {filteredNavLinks.map((link) => {
               // Special handling for Services link with dropdown in mobile
               if (link.href === '/services') {
                 return (

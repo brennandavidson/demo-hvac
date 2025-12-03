@@ -4,6 +4,7 @@ import { generateStaticMetadata } from '@/lib/seo/generate-static-metadata';
 export const metadata = generateStaticMetadata('projects');
 
 // Import sections
+import { redirect } from 'next/navigation';
 import GalleryHero from '@/components/sections/gallery/GalleryHero';
 import GalleryGrid from '@/components/sections/gallery/GalleryGrid';
 import Reviews from '@/components/sections/testimonials/Reviews';
@@ -17,6 +18,11 @@ export default function GalleryPage() {
   const config = getSiteConfig();
   const projects = config.projects?.gallery || [];
   const heroBackgroundImage = config.projects?.heroBackgroundImage;
+
+  // Redirect to homepage if no projects exist
+  if (!projects || projects.length === 0) {
+    redirect('/');
+  }
 
   return (
     <>

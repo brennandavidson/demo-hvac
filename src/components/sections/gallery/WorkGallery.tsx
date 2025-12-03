@@ -7,6 +7,11 @@ export default function WorkGallery() {
   // Homepage preview: Show first 8 projects (full gallery available on /projects page)
   const projects = projectsConfig?.gallery?.slice(0, 8) || [];
 
+  // Don't render section if there are no projects
+  if (!projects || projects.length === 0) {
+    return null;
+  }
+
   return (
     <section className="bg-background-blue py-16 text-white sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
