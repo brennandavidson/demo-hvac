@@ -1,16 +1,13 @@
 # Client Intake Process Instructions
 
-When the user asks to process a client intake, read and follow `.claude/skills/client-intake-processor.md`.
+When the user asks to process a client intake, run these 5 phases in order:
 
-Execute all 9 steps in order:
-1. Read intake form
-2. Research competitors
-3. Write website copy
-4. Generate SEO content
-5. Generate SEO metadata files
-6. Build site.config.json
-7. Copy assets
-8. **Process images with Freepik API** (CRITICAL - do not skip)
-9. Test build
+1. **intake-phase-1-research** - Read intake form, research competitors
+2. **intake-phase-2-content** - Write website copy, blog posts, SEO content
+3. **intake-phase-3-config** - Build site.config.json, copy assets
+4. **intake-phase-4-images** - Process images via Freepik API (CRITICAL - do not skip)
+5. **intake-phase-5-verify** - Test build, verify pages
 
-⚠️ Step 8 requires calling the Freepik API for blog and city images. The commands are in the skill file.
+Each phase is a separate skill. Complete each phase fully before moving to the next.
+
+⚠️ **Phase 4 is CRITICAL.** You MUST call the Freepik API for blog and city images. Do NOT use Unsplash URLs.
