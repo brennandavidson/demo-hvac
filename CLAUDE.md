@@ -54,14 +54,14 @@ npm run build    # Production build
 
 ## Freepik API
 
-Key: `FPSX36ed1e287eaac4fc8570e6b883c2997e`
+API key is stored in `.env` file as `FREEPIK_API_KEY`. See `.env.example` for setup.
 
 ```bash
 # Search
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/search.js "keywords" output-dir --limit 15
+node scripts/freepik/search.js "keywords" output-dir --limit 15
 
 # Download
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/download.js [resource-id]
+node scripts/freepik/download.js [resource-id]
 
 # Compress
 node scripts/freepik/compress.js path/to/image.jpg

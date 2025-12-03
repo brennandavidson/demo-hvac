@@ -14,15 +14,15 @@ Process all images using the Freepik API. This phase is CRITICAL - do not skip.
 
 ## Freepik API
 
-**API Key:** `FPSX36ed1e287eaac4fc8570e6b883c2997e`
+API key is loaded from `.env` file (`FREEPIK_API_KEY`). The scripts read it automatically.
 
 **Scripts:**
 ```bash
 # Search for images
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/search.js "keywords" output-dir --limit 15
+node scripts/freepik/search.js "keywords" output-dir --limit 15
 
 # Download an image
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/download.js [resource-id]
+node scripts/freepik/download.js [resource-id]
 
 # Compress an image
 node scripts/freepik/compress.js path/to/image.jpg
@@ -42,7 +42,7 @@ For EACH blog post in `public/blog-content/categories/`:
 
 2. Search Freepik with SPECIFIC keywords for that post:
 ```bash
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/search.js "[specific topic keywords]" .image-review/blog/[post-slug] --limit 15
+node scripts/freepik/search.js "[specific topic keywords]" .image-review/blog/[post-slug] --limit 15
 ```
 
 **Example searches (be specific, not generic):**
@@ -59,7 +59,7 @@ FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/search
 
 4. Download and compress:
 ```bash
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/download.js [resource-id]
+node scripts/freepik/download.js [resource-id]
 mkdir -p public/images/blog
 cp downloads/[resource-id].jpg public/images/blog/[post-slug].jpg
 node scripts/freepik/compress.js public/images/blog/[post-slug].jpg
@@ -83,12 +83,12 @@ For EACH city in `site.config.json` → `serviceAreas.cities`:
 
 1. Search Freepik for city-specific imagery:
 ```bash
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/search.js "[City Name] [State] skyline downtown" .image-review/cities/[city-slug] --limit 10
+node scripts/freepik/search.js "[City Name] [State] skyline downtown" .image-review/cities/[city-slug] --limit 10
 ```
 
 2. **If city-specific image found** (skyline, landmarks, recognizable location):
 ```bash
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/download.js [resource-id]
+node scripts/freepik/download.js [resource-id]
 mkdir -p public/images/cities
 cp downloads/[resource-id].jpg public/images/cities/[city-slug].jpg
 node scripts/freepik/compress.js public/images/cities/[city-slug].jpg
@@ -96,7 +96,7 @@ node scripts/freepik/compress.js public/images/cities/[city-slug].jpg
 
 3. **If NO city-specific image found**, search for industry + residential:
 ```bash
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/search.js "[industry] service home residential" .image-review/cities/[city-slug]-fallback --limit 15
+node scripts/freepik/search.js "[industry] service home residential" .image-review/cities/[city-slug]-fallback --limit 15
 ```
 
 **IMPORTANT:** Select a DIFFERENT image for each city. Do NOT reuse the same fallback for multiple cities.

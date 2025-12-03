@@ -9,6 +9,9 @@
  *   node scripts/freepik/search.js "roofing contractor" --landscape --limit 30
  */
 
+// Load environment variables from .env file
+require('dotenv').config();
+
 const https = require('https');
 const fs = require('fs');
 const path = require('path');

@@ -8,6 +8,9 @@
  *   node scripts/freepik/download.js 414646746 414992718 --output-dir templates/images/hvac/services/
  */
 
+// Load environment variables from .env file
+require('dotenv').config();
+
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
