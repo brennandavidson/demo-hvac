@@ -34,8 +34,11 @@ Optional files:
 4. Generate SEO content using elite-content-generator skill (service pages, city pages, blog posts)
 5. Generate SEO metadata files (.seo-config.json for all pages)
 6. Build site.config.json with all data
-7. Copy assets (logos, project photos, generate favicons)
-8. Test build
+7. Copy assets (logos, generate favicons)
+8. **Run image-processor skill** (blog images, service area images, project images)
+9. Test build
+
+⚠️ **CRITICAL: Step 8 is MANDATORY.** You MUST run the `image-processor` skill to handle all images via Freepik API. Do NOT use Unsplash URLs. Do NOT skip this step.
 
 ---
 
@@ -197,44 +200,14 @@ Create `.config.json` in each category folder:
 
 ### Blog Post Requirements
 
-**Images (REQUIRED - Use Freepik API):**
+**Images:** Leave `image` field as placeholder. The `image-processor` skill (Step 8) will handle all blog images via Freepik API.
 
-⚠️ **CRITICAL: EVERY blog post MUST have a UNIQUE image. NO IMAGE REUSE ALLOWED.**
-
-Track used Freepik resource IDs to prevent duplicates. Before downloading any image, verify it hasn't been used elsewhere.
-
-For EACH blog post:
-
-1. Search Freepik with a SPECIFIC query for that post's topic:
-```bash
-FREEPIK_API_KEY=[key] node scripts/freepik/search.js "[specific blog topic keywords]" .image-review/blog/[post-slug] --limit 15
-```
-   - Use different search terms for each post
-   - Example: "air filter replacement" NOT just "HVAC"
-   - Example: "smart thermostat home" NOT just "thermostat"
-
-2. Review thumbnails and select an image that:
-   - Has NOT been used for any other blog post
-   - Has NOT been used for service pages
-   - Is visually distinct from other blog images
-
-3. Download and compress:
-```bash
-FREEPIK_API_KEY=[key] node scripts/freepik/download.js [resource-id]
-mkdir -p public/images/blog
-cp downloads/[resource-id].jpg public/images/blog/[post-slug].jpg
-node scripts/freepik/compress.js public/images/blog/[post-slug].jpg
-```
-
-4. Set in blog post JSON:
 ```json
 {
   "image": "/images/blog/[post-slug].jpg",
-  "imageAlt": "[Descriptive alt text]"
+  "imageAlt": "[Descriptive alt text - write this now]"
 }
 ```
-
-**If you run out of unique Freepik results:** Search with different keywords, not reuse the same image.
 
 **Content formatting:**
 - Do NOT wrap content in `<article>` tags (BlogLayout handles styling)
@@ -443,23 +416,7 @@ Create slug from service name (lowercase, hyphens): "HVAC Repair" → "hvac-repa
 
 ### Service Areas Section
 
-**IMPORTANT: Each city MUST have a unique hero image.** Use Freepik API:
-
-For EACH city in the service areas:
-
-1. Search Freepik for the city:
-```bash
-FREEPIK_API_KEY=[key] node scripts/freepik/search.js "[City Name] [State] skyline cityscape" .image-review/cities/[city-slug] --limit 10
-```
-
-2. If city-specific image found (skyline, landmarks, downtown):
-   - Download, compress, save to `public/images/cities/[city-slug].jpg`
-   - Use path `/images/cities/[city-slug].jpg`
-
-3. If NO city-specific image found:
-   - Search for "[industry] service residential home" to get industry-relevant images
-   - Each city should still get a DIFFERENT image from the pool
-   - Rotate through template service images: `templates/images/[industry]/services/*.jpg`
+**Images:** Use placeholder paths. The `image-processor` skill (Step 8) will handle city images via Freepik API.
 
 ```json
 {
@@ -485,8 +442,6 @@ FREEPIK_API_KEY=[key] node scripts/freepik/search.js "[City Name] [State] skylin
   }
 }
 ```
-
-**Do NOT use the same image for all cities.** Each city page must have a visually distinct hero.
 
 ### CRITICAL: Content Field HTML Formatting
 
@@ -818,54 +773,42 @@ Then set in site.config.json:
 
 ### Process Project Photos
 
-First, check if project photos exist:
-```bash
-ls client-intake/projects/
-```
+**Handled by `image-processor` skill (Step 8).**
 
-**If client provided project photos:**
-
-1. Create the public/projects directory:
-```bash
-mkdir -p public/projects
-```
-
-2. Copy ALL images from client-intake/projects/ to public/projects/:
-```bash
-cp client-intake/projects/*.jpg public/projects/
-cp client-intake/projects/*.jpeg public/projects/ 2>/dev/null || true
-cp client-intake/projects/*.png public/projects/ 2>/dev/null || true
-```
-
-3. Update site.config.json `projects.gallery[]` with ALL copied images. **Use correct field names:**
+Just set up placeholder structure in site.config.json:
 ```json
 {
   "projects": {
     "heroBackgroundImage": "/images/template/hero-projects.jpg",
-    "gallery": [
-      { "id": "project-1", "title": "HVAC Installation", "imageSrc": "/projects/project-1.jpg", "alt": "HVAC installation project" },
-      { "id": "project-2", "title": "AC Repair", "imageSrc": "/projects/project-2.jpg", "alt": "Air conditioning repair work" },
-      { "id": "project-3", "title": "Commercial HVAC", "imageSrc": "/projects/project-3.jpg", "alt": "Commercial HVAC system" }
-    ]
+    "gallery": []
   }
 }
 ```
 
-⚠️ **CRITICAL:** Each gallery item MUST have: `id`, `title`, `imageSrc`, `alt`. The field is `imageSrc` NOT `src`.
-
-**If NO client project photos exist:**
-
-Use Freepik to download 6-8 industry-relevant project images:
-```bash
-FREEPIK_API_KEY=[key] node scripts/freepik/search.js "[industry] completed work installation" .image-review/projects --limit 15
-```
-
-Download unique images (no duplicates!) and save to `public/projects/`.
-
-IMPORTANT: Completely replace the template gallery array. Do not append. Include one entry for every image file.
+The image-processor skill will:
+- Copy client photos from `client-intake/projects/` if they exist
+- Or download images via Freepik if no client photos
+- Populate the gallery array with correct fields (`id`, `title`, `imageSrc`, `alt`)
 
 ---
-## Step 8: Test Build
+## Step 8: Run Image Processor
+
+⚠️ **DO NOT SKIP THIS STEP.**
+
+Run the `image-processor` skill now. This handles:
+- Blog post images (Freepik search per post topic)
+- Service area city images (city-specific or industry fallback)
+- Project gallery images (client photos or Freepik)
+
+The image-processor skill will update:
+- All blog post JSON files with actual image paths
+- site.config.json serviceAreas details with city images
+- site.config.json projects.gallery with project images
+
+After running image-processor, continue to Step 9.
+
+---
+## Step 9: Test Build
 
 Run build and verify key pages:
 
