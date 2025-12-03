@@ -199,18 +199,29 @@ Create `.config.json` in each category folder:
 
 **Images (REQUIRED - Use Freepik API):**
 
-For EACH blog post, use the `freepik-image-curator` skill to find a relevant image:
+⚠️ **CRITICAL: EVERY blog post MUST have a UNIQUE image. NO IMAGE REUSE ALLOWED.**
 
-1. Search Freepik for the blog topic:
+Track used Freepik resource IDs to prevent duplicates. Before downloading any image, verify it hasn't been used elsewhere.
+
+For EACH blog post:
+
+1. Search Freepik with a SPECIFIC query for that post's topic:
 ```bash
-FREEPIK_API_KEY=[key] node scripts/freepik/search.js "[blog topic] [industry]" .image-review/blog/[post-slug] --limit 10
+FREEPIK_API_KEY=[key] node scripts/freepik/search.js "[specific blog topic keywords]" .image-review/blog/[post-slug] --limit 15
 ```
+   - Use different search terms for each post
+   - Example: "air filter replacement" NOT just "HVAC"
+   - Example: "smart thermostat home" NOT just "thermostat"
 
-2. Review thumbnails and select the best match (watch for AI artifacts)
+2. Review thumbnails and select an image that:
+   - Has NOT been used for any other blog post
+   - Has NOT been used for service pages
+   - Is visually distinct from other blog images
 
 3. Download and compress:
 ```bash
 FREEPIK_API_KEY=[key] node scripts/freepik/download.js [resource-id]
+mkdir -p public/images/blog
 cp downloads/[resource-id].jpg public/images/blog/[post-slug].jpg
 node scripts/freepik/compress.js public/images/blog/[post-slug].jpg
 ```
@@ -223,9 +234,7 @@ node scripts/freepik/compress.js public/images/blog/[post-slug].jpg
 }
 ```
 
-**Fallback:** If Freepik has no relevant results for the topic, use a template industry image from `templates/images/[industry]/services/` that best matches the topic.
-
-**Each blog post MUST have a unique image.** Do not reuse images across posts.
+**If you run out of unique Freepik results:** Search with different keywords, not reuse the same image.
 
 **Content formatting:**
 - Do NOT wrap content in `<article>` tags (BlogLayout handles styling)
@@ -814,7 +823,7 @@ First, check if project photos exist:
 ls client-intake/projects/
 ```
 
-If ANY images exist:
+**If client provided project photos:**
 
 1. Create the public/projects directory:
 ```bash
@@ -828,20 +837,32 @@ cp client-intake/projects/*.jpeg public/projects/ 2>/dev/null || true
 cp client-intake/projects/*.png public/projects/ 2>/dev/null || true
 ```
 
-3. Update site.config.json projects.gallery[] with ALL copied images:
+3. Update site.config.json `projects.gallery[]` with ALL copied images. **Use correct field names:**
 ```json
 {
   "projects": {
+    "heroBackgroundImage": "/images/template/hero-projects.jpg",
     "gallery": [
-      { "src": "/projects/project-1.jpg", "alt": "HVAC installation project" },
-      { "src": "/projects/project-2.jpg", "alt": "HVAC repair work" },
-      { "src": "/projects/project-3.jpg", "alt": "Commercial HVAC system" }
+      { "id": "project-1", "title": "HVAC Installation", "imageSrc": "/projects/project-1.jpg", "alt": "HVAC installation project" },
+      { "id": "project-2", "title": "AC Repair", "imageSrc": "/projects/project-2.jpg", "alt": "Air conditioning repair work" },
+      { "id": "project-3", "title": "Commercial HVAC", "imageSrc": "/projects/project-3.jpg", "alt": "Commercial HVAC system" }
     ]
   }
 }
 ```
 
-IMPORTANT: Completely replace the template gallery array. Do not append. Include one entry for every image file copied.
+⚠️ **CRITICAL:** Each gallery item MUST have: `id`, `title`, `imageSrc`, `alt`. The field is `imageSrc` NOT `src`.
+
+**If NO client project photos exist:**
+
+Use Freepik to download 6-8 industry-relevant project images:
+```bash
+FREEPIK_API_KEY=[key] node scripts/freepik/search.js "[industry] completed work installation" .image-review/projects --limit 15
+```
+
+Download unique images (no duplicates!) and save to `public/projects/`.
+
+IMPORTANT: Completely replace the template gallery array. Do not append. Include one entry for every image file.
 
 ---
 ## Step 8: Test Build
