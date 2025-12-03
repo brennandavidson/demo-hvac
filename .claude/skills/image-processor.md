@@ -130,37 +130,20 @@ cp client-intake/projects/*.png public/projects/ 2>/dev/null || true
 }
 ```
 
+⚠️ **CRITICAL:** Field is `imageSrc` NOT `src`. Each item needs: `id`, `title`, `imageSrc`, `alt`.
+
 ### If NO client photos:
 
-Use Freepik to get 6-8 project images:
+**Do NOT use Freepik for projects.** Projects should only show real client work.
 
-```bash
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/search.js "[industry] installation completed work" .image-review/projects --limit 20
-```
-
-Download 6-8 UNIQUE images:
-```bash
-FREEPIK_API_KEY=FPSX36ed1e287eaac4fc8570e6b883c2997e node scripts/freepik/download.js [id1] [id2] [id3] [id4] [id5] [id6]
-mkdir -p public/projects
-cp downloads/[id1].jpg public/projects/project-1.jpg
-# ... repeat for each
-node scripts/freepik/compress.js public/projects/project-1.jpg
-# ... repeat for each
-```
-
-Update site.config.json:
+Set empty gallery and the projects section/page will be hidden:
 ```json
 {
   "projects": {
-    "gallery": [
-      { "id": "project-1", "title": "[Industry] Installation", "imageSrc": "/projects/project-1.jpg", "alt": "[Industry] installation project" },
-      { "id": "project-2", "title": "[Industry] Service", "imageSrc": "/projects/project-2.jpg", "alt": "[Industry] service work" }
-    ]
+    "gallery": []
   }
 }
 ```
-
-⚠️ **CRITICAL:** Field is `imageSrc` NOT `src`. Each item needs: `id`, `title`, `imageSrc`, `alt`.
 
 ---
 
@@ -179,6 +162,6 @@ rm -rf downloads/
 Before finishing, verify:
 - [ ] Every blog post has a unique image in `/images/blog/`
 - [ ] Every service area city has a unique hero image in `/images/cities/`
-- [ ] Projects gallery has 6+ images with correct `imageSrc` field
+- [ ] Projects gallery has client photos with correct `imageSrc` field (or empty if no client photos)
 - [ ] All images compressed (should be <500KB each)
 - [ ] No Unsplash URLs remain in site.config.json or blog posts

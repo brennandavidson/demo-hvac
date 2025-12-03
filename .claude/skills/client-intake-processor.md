@@ -787,8 +787,8 @@ Just set up placeholder structure in site.config.json:
 
 The image-processor skill will:
 - Copy client photos from `client-intake/projects/` if they exist
-- Or download images via Freepik if no client photos
 - Populate the gallery array with correct fields (`id`, `title`, `imageSrc`, `alt`)
+- If NO client photos exist, leave gallery empty (projects section will be hidden)
 
 ---
 ## Step 8: Run Image Processor
