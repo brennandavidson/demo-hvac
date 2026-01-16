@@ -1,9 +1,9 @@
 {
   "slug": "home",
   "seo": {
-    "title": "Valiance Media - Modern Marketing Website Solutions",
-    "description": "Build high-converting marketing websites with our Next.js boilerplate. Professional templates, SEO optimization, and modern design patterns included.",
-    "keywords": ["marketing website", "nextjs boilerplate", "web development", "conversion optimization", "landing pages", "SEO"],
+    "title": "Ash Cooling & Heating LLC | HVAC Services in Mesa, AZ",
+    "description": "Arizona's Service Heroes. Veteran-owned HVAC company providing AC repair, installation, and heating services in Mesa, Chandler, Gilbert, and the East Valley.",
+    "keywords": ["hvac mesa az", "ac repair mesa", "air conditioning installation", "heating repair arizona", "veteran owned hvac"],
     "noIndex": false
   },
   "sitemap": {
@@ -13,9 +13,7 @@
   },
   "metadata": {
     "category": "homepage",
-    "author": "Valiance Media",
-    "lastModified": "2024-01-01"
+    "author": "Ash Cooling & Heating LLC",
+    "lastModified": "2024-12-03"
   }
 }
-
-

@@ -1,52 +1,55 @@
 {
   "business": {
-    "name": "All-Star Pools",
-    "seoH1": "POOL SERVICES IN PHOENIX, AZ",
-    "tagline": "POOL SERVICES IN",
-    "primaryLocation": "PHOENIX, AZ",
-    "heroDescription": "Offering top-notch installation, renovation, maintenance, and design services exclusively in your area for discerning homeowners and businesses.",
-    "heroBackgroundImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-    "reviewsSectionBackgroundImage": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+    "name": "Ash Cooling & Heating LLC",
+    "seoH1": "HVAC SERVICES IN MESA, AZ",
+    "tagline": "A.S.H. - ARIZONA'S SERVICE HEROES",
+    "primaryLocation": "MESA, AZ",
+    "heroDescription": "Veteran-owned HVAC company serving Mesa and the East Valley with integrity, discipline, and same-day service. Licensed, bonded, and insured.",
+    "heroBackgroundImage": "/images/template/hero-home.jpg",
+    "reviewsSectionBackgroundImage": "/images/template/reviews-bg.jpg",
     "reviewBadges": {
       "google": {
         "enabled": true,
         "rating": 5,
-        "reviewCount": "50+",
-        "url": "https://www.google.com/search?q=all+star+pools+phoenix"
+        "reviewCount": "60+",
+        "url": "https://g.page/r/CaDvitYkL0FbEAI/review"
       },
       "facebook": {
         "enabled": true,
         "rating": 5,
-        "reviewCount": "40+",
-        "url": "https://www.facebook.com/allstarpools"
+        "reviewCount": "10+",
+        "url": "https://www.facebook.com/profile.php?id=61574053919931"
       }
     },
     "trustBadges": [
       {
-        "iconType": "location",
-        "title": "100% LOCAL"
+        "iconType": "shield",
+        "title": "VETERAN OWNED",
+        "subtitle": "Military Values"
       },
       {
-        "iconType": "time",
-        "title": "15+ YEARS EXPERIENCE"
+        "iconType": "certificate",
+        "title": "ROC #356015",
+        "subtitle": "Licensed & Insured"
       },
       {
         "iconType": "star",
-        "title": "HIGH QUALITY"
+        "title": "60+ REVIEWS",
+        "subtitle": "5-Star Rated"
       }
     ]
   },
   "contact": {
-    "phone": "(555) 123-4567",
-    "email": "contact@allstarpools.com",
+    "phone": "480-536-4465",
+    "email": "ashcooling@icloud.com",
     "address": {
-      "street": "123 Main Street",
-      "city": "Phoenix",
+      "street": "",
+      "city": "Mesa",
       "state": "AZ",
-      "zip": "85001"
+      "zip": "85212"
     },
-    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d427224.8741266059!2d-112.32374299999999!3d33.448376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus",
-    "googleBusinessUrl": "https://share.google.com/09fdUUKLALdogYaNJ",
+    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425745.6318367269!2d-111.67047645!3d33.523804049999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa7b66fc45e95627b%3A0x5b412f24d68aefa0!2sAsh%20Cooling%20%26%20Heating%20LLC!5e0!3m2!1sen!2sus!4v1762983285491!5m2!1sen!2sus",
+    "googleBusinessUrl": "https://maps.app.goo.gl/ashcoolingheating",
     "googleReviewUrl": "https://g.page/r/CaDvitYkL0FbEAI/review"
   },
   "services": {
@@ -54,120 +57,178 @@
     "sectionHeading": "OUR SERVICES",
     "items": [
       {
-        "title": "Installation",
-        "slug": "installation",
-        "imageSrc": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "imageAlt": "Professional pool installation services",
-        "description": "From custom in-ground pools to above-ground installations, our expert team delivers exceptional quality and craftsmanship. We handle every aspect of your pool installation from design to completion."
+        "title": "Air Conditioning Repair",
+        "slug": "air-conditioning-repair",
+        "imageSrc": "/images/template/services/ac-repair.jpg",
+        "imageAlt": "Air conditioning repair services",
+        "description": "Fast, reliable AC repair when you need it most. Our technicians diagnose and fix all makes and models, getting your system back up and running quickly."
       },
       {
-        "title": "Renovation",
-        "slug": "renovation",
-        "imageSrc": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "imageAlt": "Expert pool renovation services",
-        "description": "Transform your outdated pool into a modern oasis. Our renovation services include resurfacing, tile work, equipment upgrades, and complete pool makeovers."
+        "title": "Air Conditioning Installation",
+        "slug": "air-conditioning-installation",
+        "imageSrc": "/images/template/services/ac-installation.jpg",
+        "imageAlt": "Air conditioning installation services",
+        "description": "Professional AC installation sized correctly for your home. We help you choose the right system for maximum efficiency and comfort in Arizona's heat."
       },
       {
-        "title": "Maintenance",
-        "slug": "maintenance",
-        "imageSrc": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "imageAlt": "Regular pool maintenance services",
-        "description": "Keep your pool in pristine condition with our professional maintenance services. We offer weekly cleaning, chemical balancing, and equipment inspection."
+        "title": "Heating Repair",
+        "slug": "heating-repair",
+        "imageSrc": "/images/template/services/heating-repair.jpg",
+        "imageAlt": "Heating repair services",
+        "description": "Expert furnace and heat pump repair to keep you warm during Arizona's cool winter nights. We service all brands and provide honest assessments."
       },
       {
-        "title": "Design Services",
-        "slug": "masonry-design",
-        "imageSrc": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "imageAlt": "Professional pool design services",
-        "description": "Our design experts create custom pool plans that perfectly match your vision and property. From concept to 3D renderings, we bring your dream pool to life."
+        "title": "Heating Installation",
+        "slug": "heating-installation",
+        "imageSrc": "/images/template/services/heating-installation.jpg",
+        "imageAlt": "Heating installation services",
+        "description": "Complete heating system installation including furnaces, heat pumps, and ductwork. Financing options available to fit your budget."
+      },
+      {
+        "title": "HVAC Maintenance",
+        "slug": "hvac-maintenance",
+        "imageSrc": "/images/template/services/hvac-maintenance.jpg",
+        "imageAlt": "HVAC maintenance services",
+        "description": "Preventive maintenance keeps your system running efficiently and prevents costly breakdowns. Regular tune-ups extend equipment life and lower energy bills."
+      },
+      {
+        "title": "Commercial HVAC Services",
+        "slug": "commercial-hvac-services",
+        "imageSrc": "/images/template/services/emergency-hvac.jpg",
+        "imageAlt": "Commercial HVAC services",
+        "description": "Comprehensive HVAC solutions for businesses of all sizes. Installation, repair, and maintenance to keep your commercial space comfortable year-round."
       }
     ],
     "details": {
-      "installation": {
+      "air-conditioning-repair": {
         "hero": {
-          "title": "POOL INSTALLATION EXPERTS",
-          "subtitle": "POOL INSTALLATION IN PHOENIX, AZ",
-          "description": "Transform your backyard into a refreshing oasis with our professional pool installation services. From design to completion, we ensure a smooth, efficient process, creating the perfect pool to suit your lifestyle and enhance your home's value.",
-          "backgroundImage": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+          "title": "AC REPAIR EXPERTS",
+          "subtitle": "AIR CONDITIONING REPAIR IN MESA, AZ",
+          "description": "When your air conditioner fails in the Arizona heat, every minute matters. At Ash Cooling & Heating, we understand the urgency of AC breakdowns and provide fast, reliable repair services throughout Mesa and the East Valley.",
+          "backgroundImage": "/images/template/services/ac-repair.jpg"
         },
         "sections": [
           {
-            "heading": "What is Pool Installation?",
-            "content": "Pool installation is a comprehensive process that involves the design, excavation, and construction of a swimming pool on your property. This service transforms your backyard into a personal oasis, offering a unique blend of aesthetic appeal and functionality. From initial consultation, professionals handle every aspect of your pool installation. Our experienced team brings expertise in pool construction and landscaping around the pool. Whether it's an in-ground pool or an above-ground model, the installation process requires meticulous engineering, trenching, and finishing work to ensure your pool seamlessly integrates with your outdoor space."
+            "heading": "Fast AC Repair When You Need It",
+            "content": "<p>When your air conditioner fails in the Arizona heat, every minute matters. At Ash Cooling & Heating, we understand the urgency of AC breakdowns and provide fast, reliable repair services throughout Mesa and the East Valley.</p><h3>Common AC Problems We Fix</h3><ul><li>AC not cooling or blowing warm air</li><li>System not turning on or cycling frequently</li><li>Strange noises or unusual odors</li><li>Frozen evaporator coils</li><li>Refrigerant leaks and low charge</li><li>Thermostat and electrical issues</li></ul>"
           },
           {
-            "heading": "Why is Pool Installation Important?",
-            "content": "Having a pool installed is important for several reasons. Firstly, it provides a personal space for relaxation and recreation, enhancing your quality of life. It's a space where family and friends can gather, creating lasting memories. Secondly, a well-designed and professionally installed pool can significantly increase your property's market value. It adds aesthetic appeal and can make your property more attractive to potential buyers if you decide to sell. Lastly, with a pool, you have a convenient way to stay fit and healthy through regular swimming, a low-impact exercise that's great for people of all ages."
+            "heading": "Our Repair Process",
+            "content": "<p>Our veteran-trained technicians follow a systematic approach to diagnose and repair your AC system quickly and correctly.</p><h3>What to Expect</h3><p>When you call, we dispatch a technician to your home as quickly as possible. We arrive with fully stocked trucks to handle most repairs on the first visit.</p><ul><li>Thorough system inspection and diagnosis</li><li>Upfront pricing before any work begins</li><li>Quality repairs using manufacturer-approved parts</li><li>Testing to verify proper operation</li></ul>"
           },
           {
-            "heading": "When Should You Consider Pool Installation?",
-            "content": "You should consider pool installation when you're looking to enhance your property's value and your quality of life at home. If you have children who love swimming or if you enjoy hosting parties and gatherings, a pool can provide hours of entertainment. It's a wise investment for those living in warm climates, as it offers a refreshing respite during the hot summer months. For busy professionals who don't always have time to go to a public pool, having a pool at home can be very convenient. Additionally, if you're planning to age in place at home, a pool can provide a low-impact way of staying active. We're here to help you throughout the entire journey, from planning to the actual construction, ensuring the best value for your investment."
+            "heading": "Why Choose Ash Cooling & Heating",
+            "content": "<p>As a veteran-owned company, we bring military discipline and integrity to every service call. We provide honest assessments and never recommend unnecessary repairs.</p><h3>Our Commitment</h3><ul><li>Same-day service available</li><li>Licensed, bonded, and insured (ROC #356015)</li><li>Transparent, upfront pricing</li><li>All work guaranteed</li></ul>"
           }
         ]
       },
-      "renovation": {
+      "air-conditioning-installation": {
         "hero": {
-          "title": "POOL RENOVATION SPECIALISTS",
-          "subtitle": "TRANSFORM YOUR OUTDATED POOL",
-          "description": "Breathe new life into your existing pool with our expert renovation services. From resurfacing to complete redesigns, we'll modernize your pool while enhancing its functionality and aesthetic appeal.",
-          "backgroundImage": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+          "title": "AC INSTALLATION EXPERTS",
+          "subtitle": "AIR CONDITIONING INSTALLATION IN MESA, AZ",
+          "description": "Choosing the right air conditioning system is crucial for comfort and efficiency in Arizona's extreme heat. Our team helps you select and install the perfect system for your home.",
+          "backgroundImage": "/images/template/services/ac-installation.jpg"
         },
         "sections": [
           {
-            "heading": "What is Pool Renovation?",
-            "content": "Pool renovation involves updating, repairing, or completely transforming an existing swimming pool to improve its appearance, functionality, and efficiency. This can include resurfacing the pool interior, replacing outdated tile and coping, upgrading pool equipment, adding modern features like LED lighting or water features, and improving energy efficiency. Our renovation services can address both cosmetic concerns and structural issues, ensuring your pool not only looks beautiful but operates at peak performance."
+            "heading": "Expert AC Installation for Arizona Homes",
+            "content": "<p>Choosing the right air conditioning system is crucial for comfort and efficiency in Arizona's extreme heat. Our team helps you select and install the perfect system for your home.</p><h3>Installation Options</h3><ul><li>Central air conditioning systems</li><li>Heat pumps for heating and cooling</li><li>Ductless mini-split systems</li><li>High-efficiency SEER-rated units</li></ul>"
           },
           {
-            "heading": "Why Renovate Your Pool?",
-            "content": "Pool renovation is essential for maintaining your pool's value and extending its lifespan. Over time, pool surfaces deteriorate, equipment becomes outdated, and styles change. Renovating your pool can dramatically improve your property's value, reduce maintenance costs through modern equipment, enhance safety with updated features, and create a more enjoyable swimming environment. Whether you're dealing with cracked plaster, faded tile, or simply want to update your pool's look, renovation is often more cost-effective than replacement."
+            "heading": "Proper Sizing Matters",
+            "content": "<p>An improperly sized AC wastes energy and fails to keep you comfortable. We perform detailed load calculations to ensure your new system is sized correctly.</p><h3>Our Sizing Process</h3><p>We evaluate your home's square footage, insulation, windows, and orientation to determine the right capacity. This ensures optimal performance and efficiency.</p><ul><li>Manual J load calculations</li><li>Ductwork assessment and modifications</li><li>Energy efficiency recommendations</li></ul>"
           },
           {
-            "heading": "When Should You Renovate?",
-            "content": "Consider pool renovation when you notice visible wear and tear such as cracks, stains, or rough surfaces; outdated equipment that's costly to maintain; inefficient heating or filtration systems; or you simply want to modernize your pool's appearance. If you're preparing to sell your home, a renovated pool can significantly increase buyer appeal. We recommend scheduling a professional inspection to assess your pool's condition and discuss renovation options that fit your budget and goals."
+            "heading": "Financing Available",
+            "content": "<p>We believe everyone deserves reliable cooling. That's why we offer flexible financing options including 60-month 0% interest with approved credit.</p><h3>Investment Protection</h3><ul><li>Manufacturer warranties on equipment</li><li>Labor warranty on installation</li><li>Maintenance plans to protect your investment</li></ul>"
           }
         ]
       },
-      "maintenance": {
+      "heating-repair": {
         "hero": {
-          "title": "PROFESSIONAL POOL MAINTENANCE",
-          "subtitle": "KEEP YOUR POOL PRISTINE YEAR-ROUND",
-          "description": "Maintain crystal-clear water and optimal pool performance with our comprehensive maintenance services. We handle everything from weekly cleaning to equipment inspection, so you can simply enjoy your pool.",
-          "backgroundImage": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+          "title": "HEATING REPAIR EXPERTS",
+          "subtitle": "HEATING REPAIR IN MESA, AZ",
+          "description": "Arizona winters bring chilly nights that require reliable heating. When your furnace or heat pump fails, Ash Cooling & Heating provides fast, expert repair services.",
+          "backgroundImage": "/images/template/services/heating-repair.jpg"
         },
         "sections": [
           {
-            "heading": "What is Pool Maintenance?",
-            "content": "Pool maintenance encompasses all the regular tasks necessary to keep your swimming pool clean, safe, and functioning properly. This includes skimming debris, vacuuming, brushing walls and floors, testing and balancing water chemistry, cleaning filters, inspecting equipment, and monitoring water levels. Professional maintenance ensures your pool remains inviting and safe for swimming while protecting your investment from costly repairs caused by neglect. Our maintenance programs are customized to your pool's specific needs and usage patterns."
+            "heading": "Expert Heating Repair Services",
+            "content": "<p>Arizona winters bring chilly nights that require reliable heating. When your furnace or heat pump fails, Ash Cooling & Heating provides fast, expert repair services.</p><h3>Systems We Repair</h3><ul><li>Gas and electric furnaces</li><li>Heat pumps</li><li>Ductless heating systems</li><li>Thermostats and controls</li></ul>"
           },
           {
-            "heading": "Why is Regular Maintenance Important?",
-            "content": "Regular pool maintenance is crucial for several reasons: it ensures safe, healthy swimming conditions by preventing algae and bacteria growth; extends the life of your pool equipment and surface materials; reduces the need for expensive repairs by catching problems early; maintains crystal-clear, inviting water; and preserves your pool's value. Neglected pools can develop serious problems quickly, leading to costly repairs and potential safety hazards. Our professional maintenance service gives you peace of mind and more time to enjoy your pool."
+            "heading": "Common Heating Problems",
+            "content": "<p>Our technicians diagnose and repair all types of heating issues, from minor adjustments to major component replacements.</p><h3>Warning Signs</h3><ul><li>No heat or insufficient heating</li><li>Unusual noises or burning smells</li><li>Frequent cycling or system won't stay on</li><li>High energy bills</li><li>Yellow or flickering pilot light</li></ul>"
           },
           {
-            "heading": "When Do You Need Professional Maintenance?",
-            "content": "While some pool owners handle basic maintenance themselves, professional service is recommended if you lack time for regular upkeep, are unsure about proper chemical balancing, notice recurring water quality issues, have complex pool equipment or automation systems, or want to ensure your pool is always guest-ready. We offer flexible service plans from weekly to monthly visits, tailored to your needs. Our technicians bring expertise, professional-grade equipment, and the knowledge to spot potential problems before they become expensive repairs."
+            "heading": "Safety First",
+            "content": "<p>Heating systems involve gas and high temperatures. Our licensed technicians perform thorough safety checks with every repair.</p><h3>Our Safety Standards</h3><ul><li>Carbon monoxide testing</li><li>Gas leak detection</li><li>Heat exchanger inspection</li><li>Proper ventilation verification</li></ul>"
           }
         ]
       },
-      "masonry-design": {
+      "heating-installation": {
         "hero": {
-          "title": "CUSTOM POOL DESIGN SERVICES",
-          "subtitle": "BRING YOUR DREAM POOL TO LIFE",
-          "description": "Our expert designers work with you to create the perfect pool for your property and lifestyle. From concept sketches to 3D renderings, we'll help you visualize and plan your ideal backyard oasis.",
-          "backgroundImage": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+          "title": "HEATING INSTALLATION EXPERTS",
+          "subtitle": "HEATING INSTALLATION IN MESA, AZ",
+          "description": "Whether you're replacing an old furnace or installing a new system, Ash Cooling & Heating provides professional heating installation services.",
+          "backgroundImage": "/images/template/services/heating-installation.jpg"
         },
         "sections": [
           {
-            "heading": "What is Pool Design?",
-            "content": "Pool design is the creative and technical process of planning a swimming pool that perfectly suits your property, lifestyle, and aesthetic preferences. Our design services include site analysis, concept development, 3D rendering and visualization, material selection, feature integration, landscaping coordination, and compliance with local codes. We consider factors like your lot's topography, sun exposure, existing structures, and your intended use to create a pool that's both beautiful and functional. Our designs seamlessly integrate pools with outdoor living spaces, patios, and landscaping."
+            "heading": "Complete Heating System Installation",
+            "content": "<p>Whether you're replacing an old furnace or installing a new system, Ash Cooling & Heating provides professional heating installation services.</p><h3>Heating Options</h3><ul><li>High-efficiency gas furnaces</li><li>Electric furnaces</li><li>Heat pumps (cooling and heating)</li><li>Ductless mini-split systems</li></ul>"
           },
           {
-            "heading": "Why Invest in Professional Design?",
-            "content": "Professional pool design ensures your investment is maximized through proper planning and execution. Benefits include optimized use of your available space, integration with your home's architecture and style, selection of appropriate materials and features, avoidance of costly mistakes and code violations, realistic budgeting and timeline planning, and increased property value through thoughtful design. Our designers bring years of experience and knowledge of the latest trends, technologies, and building practices. We help you avoid common pitfalls and create a pool that you'll love for decades."
+            "heading": "Why Upgrade Your Heating System",
+            "content": "<p>Modern heating systems offer significant improvements in efficiency, comfort, and reliability compared to older units.</p><h3>Benefits of a New System</h3><ul><li>Lower energy bills with high-efficiency equipment</li><li>Improved comfort and even heating</li><li>Quieter operation</li><li>Better humidity control</li><li>Warranty protection</li></ul>"
           },
           {
-            "heading": "When Should You Start the Design Process?",
-            "content": "Begin the pool design process well before you plan to break ground. Ideally, start designing in the fall or winter for a spring/summer installation. This timeline allows for thorough planning, permit acquisition, and scheduling with contractors. Consider professional design if you're building a new pool, renovating extensively, adding significant features like spas or water features, working with challenging terrain, or want to create a complete outdoor living space. Our designers will guide you through every step, from initial concept to final construction drawings."
+            "heading": "Professional Installation",
+            "content": "<p>Proper installation is critical for performance and longevity. Our technicians follow manufacturer specifications and industry best practices.</p><h3>Our Installation Process</h3><ul><li>Removal and disposal of old equipment</li><li>Ductwork inspection and modifications</li><li>New system installation and testing</li><li>Thermostat setup and instruction</li></ul>"
+          }
+        ]
+      },
+      "hvac-maintenance": {
+        "hero": {
+          "title": "HVAC MAINTENANCE EXPERTS",
+          "subtitle": "HVAC MAINTENANCE IN MESA, AZ",
+          "description": "Regular HVAC maintenance prevents costly breakdowns and keeps your system running efficiently. Arizona's extreme temperatures demand well-maintained equipment.",
+          "backgroundImage": "/images/template/services/hvac-maintenance.jpg"
+        },
+        "sections": [
+          {
+            "heading": "Preventive Maintenance Saves Money",
+            "content": "<p>Regular HVAC maintenance prevents costly breakdowns and keeps your system running efficiently. Arizona's extreme temperatures demand well-maintained equipment.</p><h3>Maintenance Benefits</h3><ul><li>Prevent unexpected breakdowns</li><li>Lower energy bills</li><li>Extend equipment lifespan</li><li>Maintain warranty coverage</li><li>Improve indoor air quality</li></ul>"
+          },
+          {
+            "heading": "What's Included",
+            "content": "<p>Our comprehensive maintenance tune-ups cover all critical components to ensure your system is ready for peak performance.</p><h3>AC Tune-Up Includes</h3><ul><li>Clean and inspect evaporator and condenser coils</li><li>Check refrigerant levels</li><li>Inspect electrical connections</li><li>Lubricate moving parts</li><li>Test thermostat accuracy</li><li>Replace air filter</li></ul>"
+          },
+          {
+            "heading": "Maintenance Plans",
+            "content": "<p>Join our maintenance plan for scheduled service, priority scheduling, and repair discounts. Let us handle the reminders so you never miss a tune-up.</p><h3>Plan Benefits</h3><ul><li>Annual AC and heating tune-ups</li><li>Priority scheduling</li><li>Repair discounts</li><li>No overtime charges</li></ul>"
+          }
+        ]
+      },
+      "commercial-hvac-services": {
+        "hero": {
+          "title": "COMMERCIAL HVAC EXPERTS",
+          "subtitle": "COMMERCIAL HVAC SERVICES IN MESA, AZ",
+          "description": "Ash Cooling & Heating provides comprehensive commercial HVAC services to businesses throughout the East Valley. We understand that comfort affects productivity and customer experience.",
+          "backgroundImage": "/images/template/services/emergency-hvac.jpg"
+        },
+        "sections": [
+          {
+            "heading": "Commercial HVAC Solutions",
+            "content": "<p>Ash Cooling & Heating provides comprehensive commercial HVAC services to businesses throughout the East Valley. We understand that comfort affects productivity and customer experience.</p><h3>Commercial Services</h3><ul><li>Rooftop unit installation and repair</li><li>Split system service</li><li>Commercial maintenance programs</li><li>Energy efficiency upgrades</li></ul>"
+          },
+          {
+            "heading": "Industries We Serve",
+            "content": "<p>We work with businesses of all types and sizes, from small retail shops to large office buildings.</p><h3>Our Commercial Clients</h3><ul><li>Retail stores and restaurants</li><li>Office buildings</li><li>Medical and dental offices</li><li>Churches and schools</li><li>Warehouses and industrial facilities</li></ul>"
+          },
+          {
+            "heading": "Minimize Downtime",
+            "content": "<p>We work around your business hours to minimize disruption. Our technicians arrive prepared with the parts and tools needed to complete most repairs quickly.</p><h3>Commercial Advantages</h3><ul><li>Flexible scheduling including after-hours</li><li>Preventive maintenance programs</li><li>Priority service for contract customers</li><li>Detailed service documentation</li></ul>"
           }
         ]
       }
@@ -179,154 +240,154 @@
     "ctaText": "Don't see your city listed? Give us a call! We may still be able to serve your area.",
     "cities": [
       {
-        "name": "Phoenix",
-        "slug": "phoenix"
+        "name": "Chandler",
+        "slug": "chandler"
       },
       {
         "name": "Mesa",
         "slug": "mesa"
       },
       {
-        "name": "Scottsdale",
-        "slug": "scottsdale"
+        "name": "Gilbert",
+        "slug": "gilbert"
       },
       {
         "name": "Tempe",
         "slug": "tempe"
       },
       {
-        "name": "Chandler",
-        "slug": "chandler"
+        "name": "San Tan Valley",
+        "slug": "san-tan-valley"
       },
       {
-        "name": "Gilbert",
-        "slug": "gilbert"
+        "name": "Apache Junction",
+        "slug": "apache-junction"
       }
     ],
     "details": {
-      "phoenix": {
+      "chandler": {
         "hero": {
-          "title": "PHOENIX POOL SERVICES",
-          "subtitle": "POOL SERVICES IN PHOENIX",
-          "backgroundImage": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          "title": "CHANDLER HVAC SERVICES",
+          "subtitle": "HVAC SERVICES IN CHANDLER",
+          "backgroundImage": "/images/cities/chandler.jpg"
         },
         "sections": [
           {
-            "heading": "Phoenix's Premier Pool Service Provider",
-            "content": "As Arizona's capital and largest city, Phoenix is known for its year-round sunshine and outdoor lifestyle. With temperatures regularly exceeding 100°F in summer, having a well-maintained pool isn't just a luxury—it's essential. We've been serving Phoenix homeowners for years, understanding the unique challenges that come with maintaining pools in the desert climate. From historic neighborhoods in Central Phoenix to newer developments in North Phoenix and Ahwatukee, we provide comprehensive pool services tailored to your needs. Our team knows Phoenix inside and out, and we're committed to keeping your pool in perfect condition through every season."
+            "heading": "HVAC Services in Chandler, AZ",
+            "content": "<p>Ash Cooling & Heating proudly serves Chandler residents with expert heating and cooling services. From established neighborhoods to new developments, we keep Chandler comfortable year-round.</p><h3>Our Chandler Services</h3><ul><li>AC repair and installation</li><li>Heating system service</li><li>Preventive maintenance</li><li>Commercial HVAC</li></ul>"
           },
           {
-            "heading": "Complete Pool Services for Phoenix Homes",
-            "content": "We offer comprehensive pool services designed for Phoenix's climate: new pool installation and design, regular maintenance and cleaning, equipment repair and upgrades, pool resurfacing and renovation, chemical balancing and water testing, filter cleaning and replacement, pump and heater service, salt system installation and maintenance, and energy-efficient equipment upgrades. Phoenix's hard water and intense sun require special attention, and our experienced technicians know exactly how to protect your pool investment. We use professional-grade products and proven techniques to keep your water crystal clear and your equipment running efficiently year-round."
+            "heading": "Why Chandler Chooses Us",
+            "content": "<p>As a veteran-owned company based in the East Valley, we understand the unique HVAC needs of Chandler homes. The area's newer construction and high-efficiency systems require knowledgeable technicians.</p><h3>Local Expertise</h3><p>We're familiar with Chandler's neighborhoods, building codes, and the systems commonly installed in the area. This local knowledge helps us diagnose and resolve issues quickly.</p>"
           },
           {
-            "heading": "Why Phoenix Homeowners Choose Us",
-            "content": "Phoenix residents trust us because we understand the Valley's unique pool care needs. We know how dust storms affect water clarity, how summer heat stresses pool equipment, and how to maintain perfect water chemistry in challenging conditions. Our service is reliable, professional, and competitively priced. We arrive on time, work efficiently, and communicate clearly about your pool's needs. Whether you're in Arcadia, Desert Ridge, or South Mountain, we provide the same high-quality service to every customer. We're locally owned and operated, and we're invested in the Phoenix community we serve."
+            "heading": "Contact Us for Service",
+            "content": "<p>Whether you need emergency AC repair or want to schedule maintenance, Ash Cooling & Heating is ready to serve Chandler homes and businesses.</p><h3>Service Area Coverage</h3><ul><li>Downtown Chandler</li><li>Ocotillo</li><li>Sun Lakes</li><li>Chandler Heights</li></ul>"
           }
         ]
       },
       "mesa": {
         "hero": {
-          "title": "MESA POOL SERVICES",
-          "subtitle": "POOL SERVICES IN MESA",
-          "backgroundImage": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          "title": "MESA HVAC SERVICES",
+          "subtitle": "HVAC SERVICES IN MESA",
+          "backgroundImage": "/images/cities/mesa.jpg"
         },
         "sections": [
           {
-            "heading": "Mesa's Trusted Pool Service Company",
-            "content": "Mesa, one of Arizona's fastest-growing cities, features a diverse mix of established neighborhoods and new master-planned communities. From East Mesa's golf course communities to the growing areas around Red Mountain and Eastmark, pools are a central feature of Mesa living. We understand that Mesa families rely on their pools for relief from the heat and for creating memories with loved ones. Our team has extensive experience serving Mesa's varied neighborhoods, and we treat every pool with the care and attention it deserves."
+            "heading": "Your Mesa HVAC Experts",
+            "content": "<p>Based in Mesa, Ash Cooling & Heating is your local source for expert heating and cooling services. We know Mesa's climate, homes, and what it takes to stay comfortable in the desert.</p><h3>Complete HVAC Services</h3><ul><li>Air conditioning repair and replacement</li><li>Furnace and heating service</li><li>Maintenance tune-ups</li><li>New system installation</li></ul>"
           },
           {
-            "heading": "Full-Service Pool Care in Mesa",
-            "content": "Our Mesa pool services include: professional pool installation, weekly maintenance programs, pool cleaning and vacuuming, chemical testing and balancing, equipment inspection and repair, filter maintenance, pool resurfacing, tile and coping repair, automation system installation, and salt system service. Mesa's diverse housing stock means we work with pools of all ages and types, from older properties to brand-new construction. Our technicians are trained on all major pool brands and systems, ensuring expert service regardless of your pool's age or configuration."
+            "heading": "Mesa's Trusted HVAC Company",
+            "content": "<p>As neighbors, we're committed to providing honest, reliable service to Mesa families and businesses. Our veteran-owned company brings integrity to every job.</p><h3>Why Mesa Trusts Us</h3><p>We live and work in Mesa, which means we're always nearby when you need us. Our local presence means faster response times and technicians who understand your community.</p>"
           },
           {
-            "heading": "Why Mesa Residents Trust Our Service",
-            "content": "We've built our reputation in Mesa through consistent, reliable service and fair pricing. Our technicians are background-checked professionals who respect your property and your time. We provide transparent communication about your pool's needs and honest recommendations without unnecessary upselling. Whether you need emergency repairs or regular maintenance, we respond quickly and solve problems right the first time. Mesa homeowners appreciate our dedication to quality work and customer satisfaction, which is why so many of our clients come from referrals and have been with us for years."
-          }
-        ]
-      },
-      "scottsdale": {
-        "hero": {
-          "title": "SCOTTSDALE POOL SERVICES",
-          "subtitle": "POOL SERVICES IN SCOTTSDALE",
-          "backgroundImage": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-        },
-        "sections": [
-          {
-            "heading": "Scottsdale's Premium Pool Service",
-            "content": "Scottsdale is known for luxury living, resort-style amenities, and stunning desert landscapes. From North Scottsdale's custom estates to the exclusive communities of Paradise Valley, Scottsdale homeowners expect excellence in every aspect of their property—including pool care. We specialize in maintaining high-end pools with sophisticated features like infinity edges, beach entries, custom water features, and integrated automation systems. Our team understands the level of service Scottsdale properties demand, and we deliver meticulous care that keeps your pool looking resort-perfect year-round."
-          },
-          {
-            "heading": "Comprehensive Pool Services for Luxury Homes",
-            "content": "Our Scottsdale services include: custom pool design and installation, regular maintenance for complex pool systems, specialty surface care (pebble, glass tile, etc.), water feature maintenance and repair, advanced automation programming, energy-efficient equipment upgrades, salt and mineral system service, lighting system installation and repair, infinity edge maintenance, and comprehensive pool remodeling. We work with Scottsdale's most respected builders and designers, ensuring seamless integration of pool services with your property's overall aesthetic. Our attention to detail and commitment to excellence match the high standards of Scottsdale living."
-          },
-          {
-            "heading": "The Scottsdale Difference",
-            "content": "Scottsdale clients choose us because we understand luxury pool care. Our technicians are trained specialists who know how to maintain premium pool finishes, complex water features, and sophisticated control systems. We use only the highest-quality products and proven techniques to protect your investment. Our service is discreet, professional, and perfectly timed to your schedule. We work with property managers, estate staff, and homeowners to provide seamless service that exceeds expectations. Whether you're in DC Ranch, Silverleaf, or McCormick Ranch, we deliver the premium service your property deserves."
-          }
-        ]
-      },
-      "tempe": {
-        "hero": {
-          "title": "TEMPE POOL SERVICES",
-          "subtitle": "POOL SERVICES IN TEMPE",
-          "backgroundImage": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-        },
-        "sections": [
-          {
-            "heading": "Tempe's Reliable Pool Service Company",
-            "content": "Tempe offers a unique blend of university energy, established neighborhoods, and waterfront living along Tempe Town Lake. From older homes near ASU to newer communities in South Tempe, pools are essential for beating the Arizona heat. We've served Tempe residents for years, providing reliable pool care that fits busy lifestyles. Whether you're a working professional, a family with young children, or managing a rental property, we make pool ownership easy and stress-free with flexible service plans and responsive communication."
-          },
-          {
-            "heading": "Complete Pool Services for Tempe Residents",
-            "content": "We provide full pool services throughout Tempe: new pool installation, weekly and bi-weekly maintenance, pool cleaning and chemical balancing, equipment repair and replacement, filter service, pool renovations and resurfacing, tile and coping work, plumbing repairs, heater service, and green pool recovery. Tempe's mix of housing ages means we work with everything from vintage pools needing updates to newly installed systems with the latest technology. Our versatile team handles it all with equal expertise, ensuring your pool performs perfectly regardless of its age."
-          },
-          {
-            "heading": "Why Tempe Homeowners Choose Us",
-            "content": "Tempe clients appreciate our straightforward approach and reliable service. We show up when scheduled, complete work efficiently, and keep you informed about your pool's condition. Our pricing is transparent and competitive, with no hidden fees or surprise charges. We understand Tempe's diverse community and provide service that fits different needs and budgets. Whether you're near McClintock and Baseline or in the Corona del Sol area, you'll receive the same professional, courteous service. Many of our Tempe clients have been with us for years, trusting us to keep their pools swim-ready all season long."
-          }
-        ]
-      },
-      "chandler": {
-        "hero": {
-          "title": "CHANDLER POOL SERVICES",
-          "subtitle": "POOL SERVICES IN CHANDLER",
-          "backgroundImage": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-        },
-        "sections": [
-          {
-            "heading": "Chandler's Family-Focused Pool Service Provider",
-            "content": "Chandler has grown into one of Arizona's most family-friendly communities, with master-planned neighborhoods, excellent schools, and beautiful homes throughout the city. From established areas in West Chandler to newer communities like Fulton Ranch and Ocotillo, pools are a central feature of family life here. We understand that for Chandler families, a pool means summer fun, weekend gatherings, and creating lasting memories. That's why we focus on keeping your pool not just clean and functional, but safe for your children and pets. Our team has been serving Chandler families for years, and we treat every pool as if it belonged to our own family."
-          },
-          {
-            "heading": "Complete Pool Services for Chandler Homes",
-            "content": "We offer comprehensive pool services designed with Chandler families in mind: new pool installation and design, regular maintenance and cleaning, safety inspections and equipment checks, pool heater installation and repair, cartridge and DE filter cleaning, salt system installation and service, LED lighting upgrades, pool fence and safety equipment installation, and thorough cleaning and chemical balancing. We pay special attention to water chemistry, ensuring proper sanitization while maintaining comfortable swimming conditions. Chandler's newer homes often feature modern pool equipment, and our technicians are trained on the latest automation systems and energy-efficient technology."
-          },
-          {
-            "heading": "Why Chandler Families Trust Us",
-            "content": "Chandler homeowners choose us because we share their family values and commitment to quality. We understand that your pool is where your children learn to swim, where you host birthday parties, and where you create family memories. We take that responsibility seriously, providing thorough, careful service with a focus on safety and reliability. Our technicians are background-checked, professionally trained, and committed to treating your property with respect. We arrive on time, work efficiently, and always clean up after ourselves. Our pricing is transparent and competitive, because we believe quality pool service should be accessible to Chandler families."
+            "heading": "Serving All Mesa Communities",
+            "content": "<p>From the Superstition Corridor to downtown, we service all Mesa neighborhoods with the same commitment to quality and customer care.</p><h3>Mesa Neighborhoods We Serve</h3><ul><li>Downtown Mesa</li><li>Eastmark</li><li>Las Sendas</li><li>Superstition Springs</li><li>Red Mountain</li></ul>"
           }
         ]
       },
       "gilbert": {
         "hero": {
-          "title": "GILBERT POOL SERVICES",
-          "subtitle": "POOL SERVICES IN GILBERT",
-          "backgroundImage": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          "title": "GILBERT HVAC SERVICES",
+          "subtitle": "HVAC SERVICES IN GILBERT",
+          "backgroundImage": "/images/cities/gilbert.jpg"
         },
         "sections": [
           {
-            "heading": "Gilbert's Preferred Pool Service Company",
-            "content": "Gilbert has transformed from a small agricultural town into one of the Valley's most desirable communities, known for excellent schools, safe neighborhoods, and strong community values. From Heritage District's historic charm to Power Ranch's resort-style amenities and Agritopia's unique agricultural focus, Gilbert neighborhoods are diverse but share a commitment to quality. We've built our reputation in Gilbert by matching that commitment to quality in every pool we service. Our team understands Gilbert's community-oriented culture and provides pool care that reflects those same values of reliability, honesty, and excellence."
+            "heading": "Gilbert HVAC Services",
+            "content": "<p>Ash Cooling & Heating provides expert heating and cooling services to Gilbert homeowners. From Heritage District homes to new builds in Agritopia, we keep Gilbert comfortable.</p><h3>Services for Gilbert Homes</h3><ul><li>AC repair and installation</li><li>Heating system services</li><li>Maintenance programs</li><li>Indoor air quality solutions</li></ul>"
           },
           {
-            "heading": "Full-Service Pool Care Throughout Gilbert",
-            "content": "Our Gilbert services cover every aspect of pool ownership: custom pool design and installation, weekly and bi-weekly maintenance programs, thorough cleaning and vacuuming, precise chemical balancing, equipment diagnostics and repair, filter maintenance and replacement, pool renovations and upgrades, salt water system service, automation and smart pool technology, and energy-efficient equipment installation. Gilbert's rapid growth means we work with pools across a wide range of ages and styles, from established neighborhoods to brand-new construction. Regardless of when your pool was built, our skilled technicians provide expert service tailored to your specific system and needs."
+            "heading": "Gilbert's Growing Community",
+            "content": "<p>Gilbert's rapid growth means diverse housing stock from different eras. Our technicians are experienced with systems old and new, providing expert service regardless of your home's age.</p><h3>We Service All Systems</h3><p>Whether your Gilbert home has a package unit, split system, or ductless mini-splits, our technicians have the training and tools to service it properly.</p>"
           },
           {
-            "heading": "The Gilbert Standard of Service",
-            "content": "Gilbert residents expect integrity, quality, and value in their service providers, and we deliver on all three. Our technicians are experienced professionals who take pride in their work and treat every property with care. We provide honest assessments of your pool's condition and straightforward recommendations without pushing unnecessary services. Our communication is clear and timely, and we're always available to answer questions or address concerns. Whether you're in Val Vista Lakes, Seville, or Finley Farms, you'll receive reliable, professional service that earns your trust and keeps your pool in perfect condition year after year."
+            "heading": "Fast Response for Gilbert Residents",
+            "content": "<p>Located nearby, we provide quick response times for Gilbert service calls. When your AC fails on a hot summer day, we're there fast.</p><h3>Gilbert Areas We Cover</h3><ul><li>Gilbert Heritage District</li><li>Agritopia</li><li>Power Ranch</li><li>Seville</li></ul>"
+          }
+        ]
+      },
+      "tempe": {
+        "hero": {
+          "title": "TEMPE HVAC SERVICES",
+          "subtitle": "HVAC SERVICES IN TEMPE",
+          "backgroundImage": "/images/cities/tempe.jpg"
+        },
+        "sections": [
+          {
+            "heading": "HVAC Services for Tempe Homes",
+            "content": "<p>Ash Cooling & Heating serves Tempe residents with professional heating and cooling services. From historic homes near ASU to modern developments, we handle all HVAC needs.</p><h3>Tempe HVAC Solutions</h3><ul><li>Air conditioning repair</li><li>Heating system service</li><li>New equipment installation</li><li>Maintenance programs</li></ul>"
+          },
+          {
+            "heading": "Tempe's Unique HVAC Challenges",
+            "content": "<p>Tempe's mix of older and newer construction presents unique HVAC challenges. Our technicians understand how to work with different building types and system configurations.</p><h3>Experienced Technicians</h3><p>Older Tempe homes may have outdated ductwork or equipment requiring special attention. We assess each situation individually to provide the best solution.</p>"
+          },
+          {
+            "heading": "Reliable Service for Tempe",
+            "content": "<p>Whether you're a homeowner, landlord, or business owner in Tempe, count on Ash Cooling & Heating for honest, reliable HVAC service.</p><h3>Tempe Communities We Serve</h3><ul><li>Downtown Tempe</li><li>South Tempe</li><li>Tempe Marketplace area</li><li>Near ASU</li></ul>"
+          }
+        ]
+      },
+      "san-tan-valley": {
+        "hero": {
+          "title": "SAN TAN VALLEY HVAC SERVICES",
+          "subtitle": "HVAC SERVICES IN SAN TAN VALLEY",
+          "backgroundImage": "/images/cities/san-tan-valley.jpg"
+        },
+        "sections": [
+          {
+            "heading": "San Tan Valley HVAC Experts",
+            "content": "<p>Ash Cooling & Heating provides heating and cooling services to San Tan Valley's growing community. We keep your home comfortable through Arizona's extreme temperatures.</p><h3>Complete HVAC Services</h3><ul><li>AC repair and replacement</li><li>Heating installation and repair</li><li>System maintenance</li><li>New construction installation</li></ul>"
+          },
+          {
+            "heading": "Serving San Tan Valley's Newer Homes",
+            "content": "<p>San Tan Valley's relatively new housing stock means modern HVAC systems. Our technicians stay current with the latest equipment and technologies.</p><h3>Modern System Expertise</h3><p>From high-efficiency systems to smart thermostats, we service the equipment found in San Tan Valley's newer developments.</p>"
+          },
+          {
+            "heading": "Quick Response to San Tan Valley",
+            "content": "<p>Even though San Tan Valley is a bit farther from central Mesa, we provide prompt service to this growing community.</p><h3>San Tan Valley Areas</h3><ul><li>Johnson Ranch</li><li>Pecan Creek</li><li>Circle Cross Ranch</li><li>Bella Via</li></ul>"
+          }
+        ]
+      },
+      "apache-junction": {
+        "hero": {
+          "title": "APACHE JUNCTION HVAC SERVICES",
+          "subtitle": "HVAC SERVICES IN APACHE JUNCTION",
+          "backgroundImage": "/images/cities/apache-junction.jpg"
+        },
+        "sections": [
+          {
+            "heading": "Apache Junction HVAC Services",
+            "content": "<p>Ash Cooling & Heating serves Apache Junction with professional heating and cooling services. We understand the unique needs of this desert community.</p><h3>Services We Provide</h3><ul><li>Air conditioning repair and installation</li><li>Heating system service</li><li>Maintenance and tune-ups</li><li>System replacement</li></ul>"
+          },
+          {
+            "heading": "Desert Climate Expertise",
+            "content": "<p>Apache Junction's location at the base of the Superstition Mountains means specific climate challenges. We understand how the desert environment affects HVAC systems.</p><h3>Desert HVAC Knowledge</h3><p>Dust, monsoon storms, and temperature extremes all impact your HVAC system. Our maintenance services address these Arizona-specific challenges.</p>"
+          },
+          {
+            "heading": "Reliable Service for Apache Junction",
+            "content": "<p>Count on Ash Cooling & Heating for dependable HVAC service in Apache Junction and the surrounding Superstition Mountain area.</p><h3>Apache Junction Areas</h3><ul><li>Downtown Apache Junction</li><li>Superstition Mountain</li><li>Gold Canyon</li><li>Lost Dutchman area</li></ul>"
           }
         ]
       }
@@ -336,18 +397,18 @@
     "sectionBadge": "Our Story",
     "sectionHeading": "ABOUT US",
     "paragraphs": [
-      "With over 15 years of expertise, our company specializes in providing exceptional installation, renovation, and maintenance services to homeowners and businesses in the local area.",
-      "Known for our meticulous attention to detail and commitment to quality craftsmanship, we've built a reputation as a trusted name in the community. Our team of experienced professionals brings knowledge, skill, and dedication to every project.",
-      "We take pride in delivering superior results that exceed expectations, while maintaining the highest standards of customer satisfaction and service excellence."
+      "Ash Cooling & Heating LLC provides expert heating, ventilation, and air conditioning services to homeowners and businesses throughout the East Valley.",
+      "As a veteran-owned company, we bring military discipline and integrity to every job. Our licensed technicians deliver honest assessments and quality workmanship you can trust.",
+      "We're committed to keeping Arizona comfortable with same-day service, transparent pricing, and solutions tailored to your needs and budget."
     ],
     "stats": {
       "yearsExperience": {
-        "value": "15+",
+        "value": "12+",
         "label": "Years Experience"
       },
       "projectsCompleted": {
         "value": "500+",
-        "label": "Projects Completed"
+        "label": "Jobs Completed"
       },
       "satisfactionRate": {
         "value": "100%",
@@ -355,39 +416,34 @@
       }
     },
     "image": {
-      "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      "alt": "Professional contractor services"
+      "src": "/images/client/about-us.jpg",
+      "alt": "Ash Cooling & Heating team"
     }
   },
   "process": {
     "sectionBadge": "How We Work",
     "sectionHeading": "OUR PROCESS",
-    "description": "Our process is simple and only contains a few easy steps",
+    "description": "Our process is simple and designed to get you back to comfort quickly",
     "steps": [
       {
         "number": 1,
-        "title": "Free Consultation",
-        "description": "Schedule a free consultation to discuss your project needs and goals."
+        "title": "Contact Us",
+        "description": "Call or fill out our online form. We respond quickly and work around your schedule."
       },
       {
         "number": 2,
-        "title": "Estimation & Proposal",
-        "description": "Receive a detailed estimate and proposal tailored to your requirements."
+        "title": "Free Estimate",
+        "description": "Our technician assesses your needs and provides an upfront, honest quote with no hidden fees."
       },
       {
         "number": 3,
-        "title": "We Do the Work",
-        "description": "Our expert team completes your project with precision and care."
+        "title": "Expert Service",
+        "description": "Our skilled team completes the work efficiently, treating your home with respect."
       },
       {
         "number": 4,
-        "title": "Final Inspection",
-        "description": "We conduct a thorough inspection to ensure quality and satisfaction."
-      },
-      {
-        "number": 5,
-        "title": "Payment & Completion",
-        "description": "Final payment and project handoff with full documentation."
+        "title": "Satisfaction Guaranteed",
+        "description": "We stand behind our work and ensure you're completely satisfied before we leave."
       }
     ]
   },
@@ -396,32 +452,52 @@
     "sectionHeading": "FREQUENTLY ASKED QUESTIONS",
     "items": [
       {
-        "question": "Can you provide references from past clients?",
-        "answer": "Absolutely, we can provide references from past clients. Additionally, you can read the reviews and testimonials from our satisfied customers on our website. If you would like to speak with specific past clients, we can provide their contact information upon request."
+        "question": "Do you offer same-day service?",
+        "answer": "Yes, we offer same-day service for most repair calls. We understand that AC failures in Arizona are emergencies, and we prioritize getting your system running as quickly as possible."
       },
       {
-        "question": "What sets you apart from other contractors in the area?",
-        "answer": "We distinguish ourselves through meticulous attention to detail, a dedication to quality, and a personalized approach. We prioritize client communication to seamlessly bring their vision to life."
+        "question": "What areas do you serve?",
+        "answer": "We serve Mesa, Chandler, Gilbert, Tempe, San Tan Valley, Apache Junction, and surrounding East Valley communities."
       },
       {
-        "question": "Is there a fee for a consultation or estimate/quote?",
-        "answer": "No, we offer complimentary estimates to all prospective clients. We believe in providing transparent pricing and helping you understand the scope and cost of your project before making any commitments."
+        "question": "Do you offer financing?",
+        "answer": "Yes, we offer 60-month 0% interest financing with approved credit (OAC) on qualifying equipment purchases. This makes new system installation affordable for any budget."
+      },
+      {
+        "question": "Are you licensed and insured?",
+        "answer": "Yes, we are fully licensed (ROC #356015), bonded, and insured. You can verify our license with the Arizona Registrar of Contractors."
+      },
+      {
+        "question": "What brands do you service?",
+        "answer": "We service all major HVAC brands including Trane, Carrier, Lennox, Goodman, Rheem, American Standard, and more. Our technicians are trained to work on any system."
+      },
+      {
+        "question": "How often should I have my AC serviced?",
+        "answer": "We recommend annual maintenance, ideally in spring before the hot season begins. Regular maintenance prevents breakdowns, improves efficiency, and extends equipment life."
+      },
+      {
+        "question": "What makes Ash Cooling & Heating different?",
+        "answer": "As a veteran-owned company, we bring military values of integrity, discipline, and service to every job. We provide honest assessments, transparent pricing, and treat every customer with respect."
+      },
+      {
+        "question": "Do you offer emergency services?",
+        "answer": "We offer extended hours from 7 AM to 7 PM Monday through Saturday and 8 AM to 7 PM on Sunday. Call us and we'll do our best to get to you as quickly as possible."
       }
     ]
   },
   "blog": {
     "sectionBadge": "RESOURCES & INSIGHTS",
-    "sectionHeading": "OUR BLOG",
-    "sectionDescription": "Expert advice, tips, and guides to help you make informed decisions about your home improvement projects."
+    "sectionHeading": "HVAC BLOG",
+    "sectionDescription": "Expert advice, tips, and guides to help you keep your home comfortable and your HVAC system running efficiently."
   },
   "cta": {
     "heading": "READY TO TAKE THE NEXT STEP?",
     "subheading": "GET A FREE QUOTE TODAY!",
-    "buttonText": "Get a Free Quote",
-    "backgroundImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+    "buttonText": "Get Free Quote",
+    "backgroundImage": "/images/template/cta-bg.jpg"
   },
   "footer": {
-    "companyDescription": "Your trusted partner for professional pool services in the Phoenix area.",
+    "companyDescription": "Veteran-owned HVAC company serving Mesa and the East Valley with integrity, discipline, and same-day service.",
     "businessLinks": [
       {
         "label": "Home",
@@ -445,7 +521,7 @@
       },
       {
         "label": "Review Us",
-        "href": "https://www.google.com/search?q=all+star+pools+phoenix"
+        "href": "https://g.page/r/CaDvitYkL0FbEAI/review"
       }
     ],
     "legalLinks": [
@@ -459,34 +535,34 @@
       }
     ],
     "hours": {
-      "monday": "9:00AM - 5:00PM",
-      "tuesday": "9:00AM - 5:00PM",
-      "wednesday": "9:00AM - 5:00PM",
-      "thursday": "9:00AM - 5:00PM",
-      "friday": "9:00AM - 5:00PM",
-      "saturday": "Closed",
-      "sunday": "Closed"
+      "monday": "7:00 AM - 7:00 PM",
+      "tuesday": "7:00 AM - 7:00 PM",
+      "wednesday": "7:00 AM - 7:00 PM",
+      "thursday": "7:00 AM - 7:00 PM",
+      "friday": "7:00 AM - 7:00 PM",
+      "saturday": "7:00 AM - 7:00 PM",
+      "sunday": "8:00 AM - 7:00 PM"
     },
     "copyrightText": "All rights reserved."
   },
   "branding": {
     "colors": {
-      "primary": "#3b82f6",
-      "primaryLight": "#60A5FA",
-      "primaryDark": "#2563EB",
-      "primaryHover": "#2563EB",
-      "backgroundBlue": "#1e3a5f",
-      "backgroundBlueLight": "#253f66",
-      "backgroundBlueDark": "#172e4a",
-      "premium": "#06B6D4",
-      "premiumLight": "#67E8F9",
-      "premiumDark": "#0891B2",
-      "navBackground": "#1e3a5f",
-      "navBorder": "#3b82f6",
-      "badgeBg": "#1e3a5f",
+      "primary": "#E42F3A",
+      "primaryLight": "#ED5860",
+      "primaryDark": "#C41E28",
+      "primaryHover": "#C41E28",
+      "backgroundBlue": "#000000",
+      "backgroundBlueLight": "#1a1a1a",
+      "backgroundBlueDark": "#000000",
+      "premium": "#E42F3A",
+      "premiumLight": "#ED5860",
+      "premiumDark": "#C41E28",
+      "navBackground": "#000000",
+      "navBorder": "#E42F3A",
+      "badgeBg": "#2C3590",
       "badgeText": "#ffffff",
       "badgeBgInverted": "#ffffff",
-      "badgeTextInverted": "#1e3a5f"
+      "badgeTextInverted": "#2C3590"
     },
     "logo": {
       "horizontal": "/logos/horizontal-logo.png",
@@ -494,98 +570,146 @@
     },
     "logoDimensions": {
       "horizontal": {
-        "width": 3443,
-        "height": 820,
-        "maxHeight": 40
+        "width": 1200,
+        "height": 627,
+        "maxHeight": 50
       },
       "horizontalInverted": {
-        "width": 3443,
-        "height": 820,
-        "maxHeight": 40
+        "width": 1216,
+        "height": 626,
+        "maxHeight": 50
       }
     }
   },
   "social": {
-    "facebook": "https://facebook.com/allstarpools",
-    "instagram": "https://instagram.com/allstarpools",
-    "twitter": "https://twitter.com/allstarpools",
-    "youtube": "https://youtube.com/@allstarpools",
-    "google": "https://www.google.com/search?q=all+star+pools+phoenix",
-    "yelp": "https://www.yelp.com/biz/all-star-pools-phoenix"
+    "facebook": "https://www.facebook.com/profile.php?id=61574053919931",
+    "instagram": "",
+    "twitter": "",
+    "youtube": "",
+    "google": "https://g.page/r/CaDvitYkL0FbEAI",
+    "yelp": "https://www.yelp.com/biz/ash-cooling-and-heating-mesa"
   },
   "projects": {
-    "heroBackgroundImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "heroBackgroundImage": "/images/template/hero-projects.jpg",
     "gallery": [
       {
         "id": "1",
-        "title": "Modern Pool Installation - Scottsdale",
-        "imageSrc": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "alt": "Modern geometric pool with waterfall feature and spa",
+        "title": "AC Installation - Mesa",
+        "imageSrc": "/images/projects/project-1.jpg",
+        "alt": "Professional AC installation completed in Mesa",
         "category": "installation",
         "featured": true
       },
       {
         "id": "2",
-        "title": "Luxury Pool Renovation - Paradise Valley",
-        "imageSrc": "https://images.unsplash.com/photo-1519974719765-e6559eac2575?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "alt": "Renovated resort-style pool with modern finishes",
-        "category": "renovation",
+        "title": "HVAC System Replacement - Chandler",
+        "imageSrc": "/images/projects/project-2.jpg",
+        "alt": "Complete HVAC system replacement in Chandler home",
+        "category": "installation",
         "featured": true
       },
       {
         "id": "3",
-        "title": "Custom Pool Design - Mesa",
-        "imageSrc": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "alt": "Custom designed pool with integrated spa and water features",
-        "category": "design",
+        "title": "AC Repair - Gilbert",
+        "imageSrc": "/images/projects/project-3.jpg",
+        "alt": "Air conditioning repair completed in Gilbert",
+        "category": "repair",
         "featured": false
       },
       {
         "id": "4",
-        "title": "Infinity Edge Pool - North Phoenix",
-        "imageSrc": "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "alt": "Infinity edge pool overlooking desert landscape",
+        "title": "Furnace Installation - Tempe",
+        "imageSrc": "/images/projects/project-4.jpg",
+        "alt": "New furnace installation in Tempe residence",
         "category": "installation",
         "featured": true
       },
       {
         "id": "5",
-        "title": "Family Pool with Beach Entry - Chandler",
-        "imageSrc": "https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "alt": "Family-friendly pool with beach entry and safety features",
-        "category": "installation",
+        "title": "Commercial HVAC - Mesa",
+        "imageSrc": "/images/projects/project-5.jpg",
+        "alt": "Commercial HVAC service completed in Mesa",
+        "category": "commercial",
         "featured": false
       },
       {
         "id": "6",
-        "title": "Pool Resurfacing Project - Tempe",
-        "imageSrc": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "alt": "Pool resurfacing with pebble finish",
-        "category": "renovation",
+        "title": "Heat Pump Installation - Gilbert",
+        "imageSrc": "/images/projects/project-6.jpg",
+        "alt": "Heat pump system installed in Gilbert home",
+        "category": "installation",
         "featured": false
       },
       {
         "id": "7",
-        "title": "LED Lighting Upgrade - Gilbert",
-        "imageSrc": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "alt": "Pool with LED color-changing lighting system",
-        "category": "renovation",
+        "title": "AC Maintenance - Chandler",
+        "imageSrc": "/images/projects/project-7.jpg",
+        "alt": "AC maintenance service in Chandler",
+        "category": "maintenance",
         "featured": false
       },
       {
         "id": "8",
-        "title": "Contemporary Pool - Central Phoenix",
-        "imageSrc": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "alt": "Contemporary rectangular pool with modern decking",
+        "title": "Ductwork Installation - Mesa",
+        "imageSrc": "/images/projects/project-8.jpg",
+        "alt": "New ductwork installation in Mesa home",
         "category": "installation",
+        "featured": false
+      },
+      {
+        "id": "9",
+        "title": "Emergency AC Repair - San Tan Valley",
+        "imageSrc": "/images/projects/project-9.jpg",
+        "alt": "Emergency AC repair completed in San Tan Valley",
+        "category": "repair",
+        "featured": false
+      },
+      {
+        "id": "10",
+        "title": "New Construction HVAC - Gilbert",
+        "imageSrc": "/images/projects/project-10.jpg",
+        "alt": "HVAC installation for new construction in Gilbert",
+        "category": "installation",
+        "featured": false
+      },
+      {
+        "id": "11",
+        "title": "AC Unit Replacement - Apache Junction",
+        "imageSrc": "/images/projects/project-11.jpg",
+        "alt": "AC unit replacement completed in Apache Junction",
+        "category": "installation",
+        "featured": false
+      },
+      {
+        "id": "12",
+        "title": "Heating System Repair - Mesa",
+        "imageSrc": "/images/projects/project-12.jpg",
+        "alt": "Heating system repair in Mesa residence",
+        "category": "repair",
+        "featured": false
+      },
+      {
+        "id": "13",
+        "title": "Mini-Split Installation - Tempe",
+        "imageSrc": "/images/projects/project-13.jpg",
+        "alt": "Ductless mini-split installation in Tempe",
+        "category": "installation",
+        "featured": false
+      },
+      {
+        "id": "14",
+        "title": "Commercial AC Service - Chandler",
+        "imageSrc": "/images/projects/project-14.jpg",
+        "alt": "Commercial AC service completed in Chandler",
+        "category": "commercial",
         "featured": false
       }
     ]
   },
   "integrations": {
     "ghl": {
-      "quoteFormEmbedInline": "<iframe src=\"https://api.leadconnectorhq.com/widget/form/hZb4B6NKLcgsumLCU8mp\" style=\"width:100%;height:100%;border:none;border-radius:12px\" id=\"inline-hZb4B6NKLcgsumLCU8mp\" data-layout=\"{'id':'INLINE'}\" data-trigger-type=\"alwaysShow\" data-trigger-value=\"\" data-activation-type=\"alwaysActivated\" data-activation-value=\"\" data-deactivation-type=\"neverDeactivate\" data-deactivation-value=\"\" data-form-name=\"Form Template\" data-height=\"641\" data-layout-iframe-id=\"inline-hZb4B6NKLcgsumLCU8mp\" data-form-id=\"hZb4B6NKLcgsumLCU8mp\" title=\"Form Template\"></iframe><script src=\"https://link.msgsndr.com/js/form_embed.js\"></script>",
-      "quoteFormEmbedPopup": "<iframe src=\"https://api.leadconnectorhq.com/widget/form/hZb4B6NKLcgsumLCU8mp\" style=\"display:none;width:100%;height:100%;border:none;border-radius:12px\" id=\"popup-hZb4B6NKLcgsumLCU8mp\" data-layout=\"{'id':'POPUP'}\" data-trigger-type=\"alwaysShow\" data-trigger-value=\"\" data-activation-type=\"alwaysActivated\" data-activation-value=\"\" data-deactivation-type=\"neverDeactivate\" data-deactivation-value=\"\" data-form-name=\"Form Template\" data-height=\"533\" data-layout-iframe-id=\"popup-hZb4B6NKLcgsumLCU8mp\" data-form-id=\"hZb4B6NKLcgsumLCU8mp\" title=\"Form Template\"></iframe><script src=\"https://link.msgsndr.com/js/form_embed.js\"></script>",
+      "quoteFormEmbedInline": "<iframe src=\"https://api.leadconnectorhq.com/widget/form/hZb4B6NKLcgsumLCU8mp\" style=\"width:100%;height:100%;border:none;border-radius:12px\" id=\"inline-hZb4B6NKLcgsumLCU8mp\" data-layout=\"{'id':'INLINE'}\" data-trigger-type=\"alwaysShow\" data-trigger-value=\"\" data-activation-type=\"alwaysActivated\" data-activation-value=\"\" data-deactivation-type=\"neverDeactivate\" data-deactivation-value=\"\" data-form-name=\"Form Template\" data-height=\"662\" data-layout-iframe-id=\"inline-hZb4B6NKLcgsumLCU8mp\" data-form-id=\"hZb4B6NKLcgsumLCU8mp\" title=\"Form Template\"></iframe><script src=\"https://link.msgsndr.com/js/form_embed.js\"></script>",
+      "quoteFormEmbedPopup": "",
       "chatWidgetEmbed": "<script src=\"https://widgets.leadconnectorhq.com/loader.js\" data-resources-url=\"https://widgets.leadconnectorhq.com/chat-widget/loader.js\" data-widget-id=\"6906dfec7e51cb0a9742fccc\"></script>",
       "reviewsEmbed": ""
     },
