@@ -1,5 +1,4 @@
 import {
-  handleSitemapIndex,
   handlePagesSitemap,
   handleBlogPostsSitemap,
   handleBlogCategoriesSitemap,

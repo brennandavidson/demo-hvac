@@ -3,7 +3,6 @@
 import { generateStaticMetadata } from '@/lib/seo/generate-static-metadata';
 export const metadata = generateStaticMetadata('terms-of-service');
 
-import Link from "next/link";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { getSiteConfigBusiness, getSiteConfigContact, getSiteConfigServices } from '@/lib/get-site-config';
 

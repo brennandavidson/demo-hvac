@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Link from 'next/link';
 import { seoConfig } from '@/seo/seo.config';
 import PageSchemaEditor from '@/components/admin/seo/PageSchemaEditor';
 import { PageSchema } from '@/components/admin/seo/schema-types';

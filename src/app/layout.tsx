@@ -5,7 +5,6 @@ import { ConditionalLayout } from "@/components/layout/ConditionalLayout";
 import { Analytics } from "@/components/admin/Analytics";
 import { GHLChatWidget } from "@/components/GHLChatWidget";
 import { generateMetadata } from "@/seo/seo-utils";
-import { seoConfig } from "@/seo/seo.config";
 import { getSiteConfigBranding } from "@/lib/get-site-config";
 import "@/styles/globals.css";
 

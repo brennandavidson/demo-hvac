@@ -4,7 +4,7 @@ export function GHLFormScript() {
   return (
     <Script
       src="https://link.msgsndr.com/js/form_embed.js"
-      strategy="beforeInteractive"
+      strategy="afterInteractive"
     />
   );
 }

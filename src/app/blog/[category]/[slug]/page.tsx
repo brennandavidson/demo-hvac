@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import { notFound, redirect } from 'next/navigation';
 import { BlogLayout } from '@/components/admin/blog/BlogLayout';
-import { loadPost, loadBlogPosts, getRelatedPosts, loadCategories } from '@/lib/blog/blog-utils';
+import { loadPost, loadBlogPosts, getRelatedPosts } from '@/lib/blog/blog-utils';
 import { seoConfig } from '@/seo/seo.config';
 
 interface BlogPostPageProps {
@@ -15,8 +15,7 @@ interface BlogPostPageProps {
 // Generate static params for all blog posts with categories
 export async function generateStaticParams() {
   const posts = await loadBlogPosts();
-  const categories = await loadCategories();
-  
+
   const params = [];
   
   // Generate params for posts that have categories

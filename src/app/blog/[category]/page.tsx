@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { notFound, redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { PageWrapper } from '@/components/layout/PageWrapper';
 import { BlogCard } from '@/components/admin/blog/BlogCard';
 import { loadPostsByCategory, loadCategories, loadPost, loadBlogPosts } from '@/lib/blog/blog-utils';

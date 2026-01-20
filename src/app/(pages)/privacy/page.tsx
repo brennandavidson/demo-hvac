@@ -3,7 +3,6 @@
 import { generateStaticMetadata } from '@/lib/seo/generate-static-metadata';
 export const metadata = generateStaticMetadata('privacy');
 
-import Link from "next/link";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { getSiteConfigBusiness, getSiteConfigContact } from '@/lib/get-site-config';
 

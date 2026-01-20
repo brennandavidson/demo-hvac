@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect, Suspense, useCallback } from 'react';
-import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import SearchInput from '@/components/admin/ui/SearchInput';
 
@@ -31,13 +30,10 @@ function BlogListContent() {
   const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeFilter, setActiveFilter] = useState(filter);
-  const [categories, setCategories] = useState<string[]>([]);
-  const [tags, setTags] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     fetchPosts();
-    fetchCategories();
   }, []);
   
   useEffect(() => {
@@ -55,27 +51,10 @@ function BlogListContent() {
       const response = await fetch('/api/admin/blog-posts');
       const data = await response.json();
       setPosts(data.posts || []);
-      
-      // Extract unique tags from posts
-      const allTags = new Set<string>();
-      data.posts?.forEach((post: BlogPost) => {
-        post.tags?.forEach(tag => allTags.add(tag));
-      });
-      setTags(Array.from(allTags).sort());
     } catch (error) {
       console.error('Error fetching posts:', error);
     } finally {
       setLoading(false);
-    }
-  };
-  
-  const fetchCategories = async () => {
-    try {
-      const response = await fetch('/api/admin/blog/categories/list');
-      const data = await response.json();
-      setCategories(data.categories?.map((cat: any) => cat.slug) || []);
-    } catch (error) {
-      console.error('Error fetching categories:', error);
     }
   };
   

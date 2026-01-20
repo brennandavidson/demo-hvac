@@ -1,8 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useRouter, useParams } from 'next/navigation';
-import Link from 'next/link';
 import { seoConfig } from '@/seo/seo.config';
 import SlugChangeWarningModal from '@/components/admin/modals/SlugChangeWarningModal';
 import PageSchemaEditor from '@/components/admin/seo/PageSchemaEditor';
@@ -45,11 +44,7 @@ export default function EditCategoryPage() {
   const [pendingSlug, setPendingSlug] = useState<string>('');
   const [isCircularRedirect, setIsCircularRedirect] = useState(false);
 
-  useEffect(() => {
-    fetchCategory();
-  }, [categorySlug]);
-
-  const fetchCategory = async () => {
+  const fetchCategory = useCallback(async () => {
     try {
       const response = await fetch(`/api/admin/blog/categories/${categorySlug}`);
       if (response.ok) {
@@ -73,7 +68,11 @@ export default function EditCategoryPage() {
     } finally {
       setIsFetching(false);
     }
-  };
+  }, [categorySlug]);
+
+  useEffect(() => {
+    fetchCategory();
+  }, [fetchCategory]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
